@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="../globalcss/bootstrap.css" rel="stylesheet" />
+<link href="custom.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<div class="header">
+    	<h2>UX - Exercise</h2>
+    </div>
+    <div class="container">
+    	<div class="row">
+        	<div class="col-lg-2">
+            </div>
+        	<div class="col-lg-8">
+            <h3>Form using GetRequest</h3>
+            	<form action="requestedPage.html" method="get" id="demo">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">First Name</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter your first name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter your last name" required>
+                  </div>
+                  <input type="submit" class="btn btn-default" onClick="return testJS();" value="submit"></form>
+                </form>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+    </div>
+<script src="../globaljs/bootstrap.min.js"></script>
+<!-- <script src="custom.js" ></script> -->
+<!--<script>
+	function testJS() {
+		var firstname = document.getElementById('').value;
+		var lastname = document.getElementById('').value;
+		if(firstname != '' && lastname != ''){
+			var	url = encodeURIComponent(firstname) + encodeURIComponent(lastname);
+			document.location.href = url;
+		} else{
+			alert('cannto be blank');
+			return false;
+		}
+	}
+	
+</script>-->
+</body>
+</html>
