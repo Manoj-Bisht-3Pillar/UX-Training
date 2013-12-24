@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+
+<body>
+your details are: 
+<div id="fname"></div>
+
+<script>
+	
+	
+	var params = {};
+
+if (location.search) {
+    var parts = location.search.substring(1).split('&');
+
+    for (var i = 0; i < parts.length; i++) {
+        var nv = parts[i].split('=');
+		var ov = document.getElementById("fname").innerHTML;
+		if( ov == '') {
+			document.getElementById("fname").innerHTML = nv[1];
+		} else {
+			document.getElementById("fname").innerHTML = ov+" " + nv[1];
+		}
+    }
+}
+    </script>
+
+</body>
+
+</html>
