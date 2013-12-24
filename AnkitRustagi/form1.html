@@ -1,0 +1,93 @@
+<html>
+<body>
+
+<head>
+<script >
+function myFunction()
+{
+ alert (document.getElementById('title').value);
+ var name = document.getElementById('fname').value + " " + document.getElementById('lname').value;
+alert(name);
+
+if(document.getElementById('m').checked) {
+  alert("Gender :" + document.getElementById('m').value)
+}else if(document.getElementById('f').checked) {
+  alert("Gender :" + document.getElementById('f').value)
+}
+
+if(document.getElementById('b1').checked){
+  alert("Vehicle :" + document.getElementById('b1').value)
+}else if(document.getElementById('a1').checked) {
+  alert("Vehicle :" + document.getElementById('a1').value)
+}
+
+}
+</script>
+<style type="text/css">
+     body {
+       background-color : #E0E0E0;
+       margin: 0;
+       padding: 0;
+   }
+   h1 {
+       color : #000000;
+       text-align : center;
+   }
+   #main label {
+    color: #2D2D2D;
+    font-size: 15px;
+    width:10px;
+    display: inline;
+  }
+   form {
+       width: 300px;
+       margin: 0 auto;
+   }
+
+   form input[type=text]{
+    width: 100px;
+    position: 300px auto;
+    text-align:center;
+    float: center
+
+   }
+
+   form input[type=submit]{
+    width: 100px;
+    position: 300px auto;
+    text-align:center;
+    float: center
+
+   }
+ </style>
+</head>
+
+<body>
+<h1>form1 page</h1>
+<div id='main' width = '500px'>
+
+
+<form id='sampleform' method='get' action='form2.html' >
+	<label>Title</label><select id="title" name = "title" align = 'right'>
+                <option value="Select">Select</option>
+                <option value="Mr">Mr.</option>
+								<option value="Mrs">Mrs</option>
+								<option value="Ms">Miss</option>
+	</select>
+  <br>
+<label>First Name: </label><input type='text' name='fname' id='fname' /><br>
+  <label>Last Name: </label><input type='text' name='lname' id='lname' /><br>
+<label>Gender:</label><br>
+   <input type="radio" name="sex" id="m" value="male">Male<br>
+   <input type="radio" name="sex" id="f" value="female">Female<br>
+   
+<label>vehicle:</label><br>
+   <input type="checkbox" name="vehicle" id="b1" value="Bike">I have a bike<br>
+   <input type="checkbox" name="vehicle" id="a1" value="Car">I have a car
+   <p>
+   <input type='submit' onClick="myFunction()" name='Submit' value='Submit' />
+   </p>
+</form>
+ </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function getEventType(event) {
+        alert(event.type);
+    }
+</script>
+</head>
+
+<body onmousedown="">
+
+<p>Click in the document.
+An alert box will tell what type of event 
+that was triggered.</p>
+    <input type="button" onclick="getEventType(event)" value="click" />
+</body>
+</html>

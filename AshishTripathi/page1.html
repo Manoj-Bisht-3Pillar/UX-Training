@@ -1,0 +1,85 @@
+<html>
+	<head>
+	    <title>
+	        Form using get method
+	    </title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="script.js"></script>
+		<script>
+			function check(){
+				if(document.getElementById('firstname').value == ""){
+					alert("Please enter first name");
+					document.getElementById('firstname').focus();
+					return false;
+				}
+				if(document.getElementById('lastname').value == ""){
+					alert("Please enter last name");
+					document.getElementById('lastname').focus();
+					return false;
+				}
+				return true;
+			}
+		</script>
+	</head>
+	<body>
+	    <div>
+	        <div id = "header">
+	            <div id = "main_heading">
+                	<h1>Assignment 1 sending data through GET method</h1>
+            	</div>
+            	<div id = "navigation">
+            	    <ul>
+                	    <li>
+                	        <a href="#">Home</a>
+                	    </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                	    <li>
+                	        <a href="#">Contact</a>
+                	    </li>
+            	    </ul>
+	            </div>
+           	</div>
+           	<div class="clear"></div>
+           	<div id = "content">
+           	    <div id = "form_data">
+           	        <h3>Form using GET method:</h3>
+               	    <form name = "get_form" method = "GET" action = "page2.html">
+               	        <p>
+							<lable>First Name: * </lable>
+               	            <input type = "text" name = "firstname" id="firstname" value = "">
+           	            </p>
+           	            <p>
+							<lable>Last Name: * </lable>
+               	            <input type = "text" name = "lastname" id="lastname" value = "">
+               	        </p>
+						<p>
+							<lable>Sex: </lable>
+							Male
+							<input type = "radio" name = "sex" id="sex" value = "Male">
+							Female
+							<input type = "radio" name = "sex" id="sex" value = "Female">
+						</p>
+						<p>
+							<lable>Location: </lable>
+							<select name="location" id="location">
+								<option value="">-Select City-</option>
+								<option value="Delhi">Delhi</option>
+								<option value="Kolkata">Kolkata</option>
+								<option value="Chennai">Chennai</option>
+								<option value="Mumbay">Mumbay</option>
+							</select>
+						</p>
+               	        <p>
+               	            <input type = "submit" value = "Submit" onclick="return check();"/>
+               	            <input type = "reset" value = "Clear form" />
+               	            <input type = "button" value = "Show Form Fields" onclick = "checkForm()"/>
+               	        </p>
+               	    </form>
+               	</div>
+               	<div class= "textcontent">Some text will come here very soon</div>
+           	</div>
+	    </div>
+	</body>
+</html>

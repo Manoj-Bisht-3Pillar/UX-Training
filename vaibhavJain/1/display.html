@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+var b = document.URL;
+var b1 = b.split("?")[1].split("&")[0].split("=")[1]
+var b2 = b.split("?")[1].split("&")[1].split("=")[1]
+
+function show() {
+	
+	document.getElementById('gh').value=b1;
+	document.getElementById('fh').value=b2;
+
+}
+
+</script>
+</head>
+
+<body onload = "show()">
+
+First name is: <input type="text" name="firstname" id='gh'><br>
+Last name is: <input type="text" name="lastname" id ='fh'><br>
+
+</body>
+
+</html>
