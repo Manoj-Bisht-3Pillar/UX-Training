@@ -1,0 +1,84 @@
+<html>
+	<head>
+	    <title>
+	        Form using post method
+	    </title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script>
+			window.onload = function(){
+				url = document.URL;
+				split_url = url.split('?');
+				attr_split = split_url[1].split('&');
+				document.getElementById('firstname').value = attr_split[0].split('=')[1]
+				document.getElementById('lastname').value = attr_split[1].split('=')[1]
+				sex_value = attr_split[2].split('=')[1]
+				if(sex_value == "Male"){
+					document.getElementById('sex1').checked = true;
+				}else if (sex_value == "Female"){
+					document.getElementById('sex2').checked = true;
+				}
+				document.getElementById('location').value = attr_split[3].split('=')[1]
+			}
+		</script>
+	</head>
+	<body>
+	    <div>
+	        <div id = "header">
+	            <div id = "main_heading">
+                	<h1>Assignment 1 sending data through POST method</h1>
+            	</div>
+            	<div id = "navigation">
+            	    <ul>
+                	    <li>
+                	        <a href="#">Home</a>
+                	    </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                	    <li>
+                	        <a href="#">Contact</a>
+                	    </li>
+            	    </ul>
+	            </div>
+           	</div>
+           	<div class="clear"></div>
+           	<div id = "content">
+           	    <div id = "form_data">
+           	        <h3>Form using POST method:</h3>
+               	    <form name = "post_form" method = "POST" action = "page1.html">
+               	        <p>
+							<lable>First Name: </lable>
+               	            <input type = "text" name = "firstname" id="firstname" value = "">
+           	            </p>
+           	            <p>
+							<lable>Last Name: </lable>
+               	            <input type = "text" name = "lastname" id="lastname" value = "">
+               	        </p>
+						<p>
+							<lable>Sex: </lable>
+							Male
+							<input type = "radio" name = "sex" id="sex1" value = "Male">
+							Female
+							<input type = "radio" name = "sex" id="sex2" value = "Female">
+						</p>
+						<p>
+							<lable>Location: </lable>
+							<select name="location" id="location">
+								<option value="">-Select City-</option>
+								<option value="Delhi">Delhi</option>
+								<option value="Kolkata">Kolkata</option>
+								<option value="Chennai">Chennai</option>
+								<option value="Mumbay">Mumbay</option>
+							</select>
+						</p>
+               	        <p>
+               	            <input type = "submit" value = "Submit"/>
+               	            <input type = "reset" value = "Clear form" />
+               	        </p>
+               	    </form>
+               	</div>
+               	<div class= "textcontent">Some text will come here very soon</div>
+           	</div>
+	    </div>
+	</body>
+</html>

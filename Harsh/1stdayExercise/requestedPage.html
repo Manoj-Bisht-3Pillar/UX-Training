@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="../globalcss/bootstrap.css" rel="stylesheet" />
+<link href="custom.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<div class="header">
+    	<h2>UX - Exercise</h2>
+    </div>
+    <div class="container">
+    	<div class="row">
+        	<div class="col-lg-3">
+            </div>
+        	<div class="col-lg-6">
+            	<h3>Form using GetRequest</h3>
+            	<div class="panel panel-default">
+                  <div class="panel-heading">First Name</div>
+                  <div class="panel-body" id="first">
+                    Panel content
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">Last Name</div>
+                  <div class="panel-body" id="last">
+                    Panel content
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+            </div>
+        </div>
+    </div>
+<script src="../globaljs/bootstrap.min.js"></script>
+<script>
+window.onload = function () {
+    var url = document.location.href;
+	console.log(url);
+	console.log(url.split('?')[1].split('&'));
+    var params = url.split('?')[1].split('&');
+	console.log(params);
+	console.log(params.length);
+    var data = {}, tmp;
+    for (var i = 0, l = params.length; i < l; i++) {
+         tmp = params[i].split('=');
+         data[tmp[0]] = tmp[1];
+    }
+	console.log(data);
+    document.getElementById('first').innerHTML = data.firstname;
+	document.getElementById('last').innerHTML = data.lastname;
+}
+</script>
+</body>
+</html>
