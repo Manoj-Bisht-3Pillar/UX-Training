@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="../globalcss/bootstrap.css" rel="stylesheet" />
+<link href="custom.css" rel="stylesheet"/>
+</head>
+
+<body>
+	<div class="header">
+    	<h2>UX - Exercise</h2>
+    </div>
+     <div class="container">
+    	<div class="row">
+        	<div class="col-lg-2">
+            </div>
+        	<div class="col-lg-8">
+            <h3>Object construction</h3>
+            	<input type="submit" class="btn btn-default" onclick="person.getName();" value="Click"></form>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+	var person = new Object();
+	person.name = 'Your name is Hero';
+	person.getName = function(){
+		return alert(this.name);
+	}
+</script>
+</body>
+</html>
