@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Example Closure</title>
+<script type="text/javascript">
+function Vehicle(hasEngine,hasWheels){
+	this.hasEngine = hasEngine | false;
+	this.hasWheels = hasWheels | false;
+}
+function Car(make,model,hp){
+	this.base = Vehicle
+	this.base(true,true)
+	this.make = make;
+	this.model = model;
+	this.hp = hp;
+
+}
+function CarVehicle(){
+	//Car.prototype = new Vehicle(true,true); Inheriting a class and passing initial parameters
+	Car.prototype = new Vehicle; //base class has been defined in Car itself and initalized the values
+	Car.prototype.displaySpecs = function(){
+		alert (this.make + "," + this.model +"," + this.hp +","+ this.hasEngine +","+ this.hasWheels);
+	}
+	var newAudi = new Car('Audi','A4',150);
+	newAudi.displaySpecs()
+	Vehicle.prototype.hasTrunk = true;
+	alert(newAudi.hasTrunk)
+}
+
+</script>
+</head>
+
+<body>
+<h1>Closure Example One</h1>
+<input class="codeButton" value="CarVehicle;" onclick="CarVehicle();" type="button">
+</body>
+</html>
