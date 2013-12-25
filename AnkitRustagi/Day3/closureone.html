@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Example Closure</title>
+<script type="text/javascript">
+  //a closure is the local variables for a function - kept alive after the function has returned
+  function sayHello(name) {
+  var text = 'Hello ' + name;
+  var sayAlert = function() { alert(text); }
+  sayAlert();
+}
+</script>
+</head>
+
+<body>
+<h1>Closure Example One</h1>
+<input class="codeButton" value="sayHello('Bob');" onclick="sayHello('Bob');" type="button">
+</body>
+</html>

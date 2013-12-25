@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Example Closure</title>
+<script type="text/javascript">
+  function celebrityID () {
+    var celebrityID = 999;
+    // We are returning an object with some inner functions
+    // All the inner functions have access to the outer function's variables
+    return {
+        getID: function ()  {
+            // This inner function will return the UPDATED celebrityID variable
+            // It will return the current value of celebrityID, even after the changeTheID function changes it
+          return celebrityID;
+        },
+        setID: function (theNewID)  {
+            // This inner function will change the outer function's variable anytime
+            celebrityID = theNewID;
+        }
+    }
+
+}
+
+/*var mjID = celebrityID (); // At this juncture, the celebrityID outer function has returned.
+mjID.getID(); // 999
+mjID.setID(567); // Changes the outer function's variable
+mjID.getID(); // 567: It returns the updated celebrityId variable
+*/
+</script>
+</head>
+
+<body>
+<h1>Closure Example Three</h1>
+<input id="btn2" class="codeButton" type="button" onclick="var mjID = celebrityID ();alert(mjID.getID());mjID.setID(557);alert(mjID.getID());" value="Set and Update Id"></input>
+</body>
+</html>
