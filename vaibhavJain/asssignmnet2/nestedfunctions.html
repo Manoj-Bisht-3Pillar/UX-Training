@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<head>
+<h1> Use of Nested functions (CLOSURE) </h1>
+<script>
+
+ var global = "your designation is :"
+ 
+function myFunction() 
+{
+	var intro = "your name is :" 
+	var name = document.getElementById('firstname').value + " " + document.getElementById('lastname').value;
+	var ds = document.getElementById('Designation').value
+	
+	function fullname()
+	{
+	alert("inner function calling outer's variable" + " " +intro + " " + name);
+	alert("inner function calling global variable" + " " +global+ " " +ds);
+	}
+
+	alert("outer function calling global variable" + " " + global + " " +ds); //called before inner function 
+	
+	return fullname();
+}
+</script>
+</head>
+
+<form id='sampleform' method='post' action='' >
+
+    First name: <input type="text" id="firstname"><br>
+    Last name: <input type="text" id="lastname"><br>
+	Designation : <input type="text" id="Designation"><br>
+  
+  <input type='submit' onclick='myFunction()' name='Submit' value='Submit' />
+  
+</form>
+</html>
