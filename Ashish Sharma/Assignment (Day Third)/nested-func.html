@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nested function</title>
+<script type="text/javascript">
+function addsquare(a,b) {
+	function square(x) {
+		return (x*x);
+	}
+	var sq1 = square (a);
+	var sq2 = square (b);
+	var sum = sq1 + sq2 ;
+	
+alert ("The value of addsquare method is:" +sum);
+return sum;
+}
+
+</script>
+</head>
+
+<body>
+	<div>
+        <h2>Nested function</h2>
+    </div>
+    <div>
+        <input type="submit" onclick="addsquare(1,2);" value="Click"></form>
+      </div>
+</body>
+</html>
