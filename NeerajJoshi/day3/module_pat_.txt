@@ -1,0 +1,21 @@
+as Understood, we use module pattern when we want our application to be 
+1. Scalable. Modules are isolated pieces of code that when well designed, work independently of other modules and therefore can be removed and added as necessary.
+
+2. Team-ready. Building a large-scale javascript application is simpler with the module pattern. Each developer on a team can be assigned a set of modules to develop and can work in parallel with minimal conflicts. Additionally, everyone can write in their own preferred style within the context of the pattern without preferences getting in the way of progress.
+
+3. Localized. Anonymous wrappers automatically create a new "namespace" for the whole module. This has performance advantages in garbage collection and scope chain walking. Furthermore, variables can be passed into the anonymous wrapper to localize commonly accessed global variables, such as window, document, and jQuery, like so:
+
+
+4. Cross-instantiation private variables. Normally when you instantiate an object with something like new module(), a whole new clean object is created–and that's still the case. But the private variables will retain their values across instantiations.
+
+5. Extensible. Want to dynamically add additional methods to a module? No problem.
+
+// extend it with something_else();
+var module = (function (module) {
+    module.prototype.something_else = function () {
+    };
+    return module;
+})(module);
+With a few changes this same pattern can be used to "subclass" an existing module.
+
+6. Deferrable. Another advantage of its isolation and containment is that you can inject it on demand without worrying about its impact on other modules. Using the following code, for example:
