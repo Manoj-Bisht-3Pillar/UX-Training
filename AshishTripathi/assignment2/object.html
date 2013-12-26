@@ -1,0 +1,14 @@
+<!-- Define object with operator new Object -->
+<script language='javascript' type='text/javascript'>
+	car = new Object();
+	car.color = 'red';
+	car.model = 'AS100';
+	car.state = function(){
+		this.state = "running"
+		alert("Car state is "+this.state);
+		alert("Car color is "+this.color);
+		alert("Car model id "+this.model);
+	}
+	car.state();
+</script>
+

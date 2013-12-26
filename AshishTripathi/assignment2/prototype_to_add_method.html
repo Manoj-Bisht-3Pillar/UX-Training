@@ -1,0 +1,31 @@
+<!-- Prototype to add method and properties in a class -->
+<script language="javascript" type="text/javascript">
+	function company(type, rank){
+		var self = this;
+		self.type = type;
+		self.rank = rank;
+		
+		self.company_rank = function(){
+			document.write("This is a "+ self.type+" company and its ranking is "+self.rank+"<br>");
+		}
+	}
+	
+	company.prototype.change_name = function(type, rank){
+		this.type = type;
+		this.rank = rank;
+	}
+	
+	ibm = new company("IBM", "5th");
+	ibm.change_name("Infosys", "4th");
+	ibm.company_rank();
+	
+	company.prototype.product = "Calculator"
+	
+	function info(){
+		document.write("This is a "+ this.type+" company and its ranking is "+this.rank+" and its product is "+this.product);
+	}
+	
+	company.prototype.com_info = info;
+	ibm = new company("IBM", "5th");
+	ibm.com_info(); 
+</script>
