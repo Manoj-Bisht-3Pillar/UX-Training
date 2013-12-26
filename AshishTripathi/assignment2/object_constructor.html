@@ -1,0 +1,40 @@
+<!-- Object constructor is just a javascript function, the only differece between the two is a constructor is called via new operator -->
+<script language="javascript" type="text/javascript">
+	function employee(name, dipartment, designation){
+		var self = this
+		self.name = name;
+		self.dipartment = dipartment;
+		self.designation = designation;
+		
+		alert("Employee name is "+ self.name);
+		alert("Employee dipartment is "+ self.dipartment);
+		alert("Employee designation is "+ self.designation);
+	}
+	
+	var emp_obj = new employee("John", "Software", "Software Engineer 1");
+	var emp_obj = new employee("Jolly", "Software", "Software Engineer 2");
+	
+	document.write(emp_obj.constructor+ "<br>");
+</script>
+
+<!-- Add a method to the construtor -->
+<script language="javascript" type="text/javascript">
+	function bank(name, state, district){
+		var self = this;
+		self.name = name;
+		self.state = state;
+		self.district = district;
+
+		self.bank_info = function(){
+			document.write("Bank name is "+ self.name+ "<br>");
+			document.write("Bank state is "+ self.state+ "<br>");
+			document.write("Bank district is "+ self.district+ "<br>");
+		}
+	}
+	
+	sbi = new bank("SBI", "Uttar Pradesh", "Allahabad");
+	sbi.bank_info();
+	
+	icici = new bank("ICICI", "Hariyana", "Gurgaon");
+	icici.bank_info();
+</script>

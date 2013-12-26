@@ -1,0 +1,19 @@
+<!-- Prototype to add properties in a class -->
+<script language="javascript" type="text/javascript">
+	function vehicle(type, color, name){
+		var self = this;
+		self.type = type;
+		self.color = color;
+		self.name = name;
+	}
+	
+	car = new vehicle("car", "red", "indica");
+	alert("Vehicle type is "+car.type);
+	alert("Vehicle color is "+car.color);
+	alert("Vehicle name is "+car.name);
+	
+	vehicle.prototype.engine = null;
+	car.engine = "1500 CC"
+	
+	alert("Vehicle engine is "+car.engine);
+</script>

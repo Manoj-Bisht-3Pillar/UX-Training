@@ -1,0 +1,37 @@
+<!-- Inheritance by prototype -->
+<script language="javascript" type="text/javascript">
+	function Vehicle(hasEngine, hasWheels){ 
+		this.hasEngine = hasEngine; 
+		this.hasWheels = hasWheels; 
+	}
+	
+	Vehicle.prototype.changespec = function (make, model, hp){
+		this.make = make;
+		this.model = model;
+		this.hp = hp;
+	}
+	
+	function Car (make, model, hp){ 
+		this.hp = hp; 
+		this.make = make; 
+		this.model = model; 
+	}
+	
+	Car.prototype = new Vehicle(true, true); //Now Car should be able to inherit properties from Vehicle
+	
+	Car.prototype.displaySpecs = function (){ 
+		alert(this.make + ", " + this.model + ", " + this.hp + ", " + this.hasEngine + ", " + this.hasWheels); 
+	}
+	
+	var myAudi = new Car ("Audi", "A4", 150);
+	
+	myAudi.displaySpecs();
+
+	myAudi.changespec("BMW", "C7", 200);
+
+	myAudi.displaySpecs();
+	
+	Vehicle.prototype.hasTrunk = true;
+	
+	alert(myAudi.hasTrunk);
+</script>

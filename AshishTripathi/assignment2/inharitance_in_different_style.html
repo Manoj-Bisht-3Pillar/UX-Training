@@ -1,0 +1,24 @@
+<script language="javascript" type="text/javascript">
+	function collage(){
+		this.collage_info = collage_info;
+	}
+	
+	function student(){
+		this.inheritFrom = collage; // this.inheritFrom use to inherit base class collage
+		this.inheritFrom();
+		this.student_info = student_info;
+	}
+	
+	function collage_info(){
+		return "Collage Information";
+	}
+	
+	function student_info(){
+		return "Student Information";
+	}
+	
+	stu_obj = new student();
+	
+	alert(stu_obj.collage_info());
+	alert(stu_obj.student_info());
+</script>
