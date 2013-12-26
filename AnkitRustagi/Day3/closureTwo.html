@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Example Closure</title>
+<script type="text/javascript">
+  //a closure is the local variables for a function - kept alive after the function has returned
+  function celebrityName (firstName) {
+    var nameIntro = "This celebrity is ";
+    this.nameGlobal = "Hello SuperStar"
+    // this inner function has access to the outer function's variables, including the parameter
+   function lastName (theLastName) {
+   		fullmsg = nameIntro + firstName + " " + theLastName;
+        return fullmsg;
+        }
+    return lastName;
+}
+
+</script>
+</head>
+
+<body>
+<h1>Closure Example Two</h1>
+<input id="btn2" class="codeButton" type="button" onclick="var mjName = celebrityName ('Michael'); alert(mjName ('Jackson')); alert(mjName.nameIntro);alert(mjName.nameGlobal)" value="Celebrity Name = Michel Jacson"></input>
+</body>
+</html>

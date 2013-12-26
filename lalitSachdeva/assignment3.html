@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Assignment 1</title>
+	<script language="javascript" type="text/javascript">
+		function show()
+		{
+			var sex1 = document.getElementById("sex1").checked;
+			var sex2 = document.getElementById("sex2").checked;
+			if (sex1 == true)
+			{
+				var sex = document.getElementById("sex1").value;
+			}
+			else if(sex2 == true)
+			{
+				var sex = document.getElementById("sex2").value;	
+			}
+			alert(document.getElementById('first_name').value + " " + document.getElementById('last_name').value + " " + sex);		
+
+			// alert(document.getElementById('first_name').value);
+			// alert(document.getElementById('last_name').value);
+			// alert(document.getElementById('sex').value);
+
+		}
+	</script>
+</head>
+<body> 
+	<form action="" method="get" name="user_details">
+		First Name : 
+		<input type='textbox' id="first_name" name='first_name'><br>
+		Last Name : 
+		<input type='textbox' id='last_name' name='last_name'><br>
+		Gender : <br>
+		Male <input type="radio" id="sex1" name="sex" value="male"><br>
+		Female <input type="radio" id="sex2" name="sex" value="female">
+		<br>
+		<button type="button" value='Submit' onclick="show()">Submit</button>
+	</form>
+</body>
+</html>
+
