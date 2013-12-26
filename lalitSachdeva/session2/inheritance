@@ -1,6 +1,0 @@
-<html>
-<head>
-	<title> Private and Public scope. </title>
-	<script language="javascript" type="text/javascript">
-	function message(){
-			var self = this;
