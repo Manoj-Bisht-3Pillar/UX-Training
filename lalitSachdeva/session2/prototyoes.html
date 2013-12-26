@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title> Prototypes </title>
+	<script language="javascript" type="text/javascript">
+	function message(name){
+			this.name = name;
+			// document.write("lalit");
+		}
+		//prototypes helps us in adding the different function to our classes
+	message.prototype.write = function(){
+    	alert("Hello " + this.name);
+		}
+	var name = new message("Lalit");
+	name.write();
+
+	</script>
+</head>
+<body> 
+
+</body>
+</html>

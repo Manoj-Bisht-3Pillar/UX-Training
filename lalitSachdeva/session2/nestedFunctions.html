@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title> Nested Functions and Inheritance concept using nested fuinctions </title>
+	<script language="javascript" type="text/javascript">
+	function message(){
+			var self = this;
+			self.name = "Lalit Sachdeva";
+			// alert("Hello " + name);
+			function inner_message(){
+
+				alert("i am the inner_message");
+				this.other_name = " i am the inner_message " + self.name
+			}
+			self.inner = new inner_message();
+		}
+		object = new message();
+		document.write(object.name + " Outer class");
+		document.write(object.inner.other_name);
+	</script>
+</head>
+<body> 
+
+</body>
+</html>
