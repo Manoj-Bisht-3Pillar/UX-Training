@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script>
+
+<!-- Create constructor function for Vehicle  -->
+function Vehicle(hasEngine, hasWheels) {
+    this.hasEngine = hasEngine || false;
+    this.hasWheels = hasWheels || false;
+}
+
+<!-- Create constructor function Car  -->
+function Car (make, model, hp) {    
+    this.hp = hp;
+    this.make = make;
+    this.model = model;
+}	
+
+<!-- Set up dynamic inheritance  -->
+Car.prototype = new Vehicle(true, true);
+
+<!--  Extending Car using prototype -->
+Car.prototype.displaySpecs = function () {
+    console.log(this.make + ", " + this.model + ", " + this.hp + ", " + this.hasEngine + ", " + this.hasWheels);
+}
+
+<!--  Creating a new Car -->
+var myAudi = new Car ("Audi", "A4", 150);
+
+<!-- Extend Vehicle using prototype  -->
+Vehicle.prototype.hasTrunk = true;
+console.log(myAudi.hasTrunk); // logs: true
+</script>
+</head>
+
+<body>
+</body>
+</html>
