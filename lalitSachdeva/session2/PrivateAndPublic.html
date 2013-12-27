@@ -2,23 +2,15 @@
 <head>
 	<title> Private and Public scope. </title>
 	<script language="javascript" type="text/javascript">
+		var x = "abc";
 		function message(){
-			var privName = "Private 2";
-			var publicName1 = "Public2";
-			var name = "Lalit Sachdeva Public"  ;
-			var other_name = "I am Private";
-			return{
-				MYval:publicName1,
-				Myval2:privName
-			};
+			this.x = "def";
+			document.write(this.x);
 		}
-		 object = new message();
-		 document.write(object.name);
-		 document.write(object.other_name);
-		 document.write(object.privName);
-		 document.write(object.publicName1);
-		  document.write(object.MYval);
-		  document.write(object.Myval2);		
+		
+		object = new message();
+		document.write(object.x);
+		object.message();		
 	</script>
 </head>
 <body> 

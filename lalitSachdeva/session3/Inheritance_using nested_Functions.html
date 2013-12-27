@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title> Nested Functions and inheritance </title>
+	<script language="javascript" type="text/javascript">
+	function message(){
+			var self = this;
+			self.name = "Lalit Sachdeva";
+			// alert("Hello " + name);
+			function inner_message(){
+
+				alert("i am the inner_message");
+				this.other_name = " inner_message " + self.name
+				function inner_message1(){
+					alert("I am the innermost message");
+					self.name = "abc";
+					this.another = " innermost " + self.name
+					
+				}
+				self.inner_most = new inner_message1();
+			}
+			self.inner = new inner_message();
+
+		}
+		object = new message();
+		document.write(object.name + " Outer class");
+		document.write(object.inner.other_name);
+		document.write(object.inner_most.another);
+
+		document.write(object.name + " Outer class");
+		document.write(object.inner.other_name);
+		document.write(object.inner_most.another);
+		// oject.inner.inner_message1();
+	</script>
+</head>
+<body> 
+
+</body>
+</html>
+
+<!--dofactory.com -->
