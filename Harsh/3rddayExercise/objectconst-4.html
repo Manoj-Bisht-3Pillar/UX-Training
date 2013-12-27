@@ -30,10 +30,12 @@
 	function person(fname){
 		this.firstname = fname;	
 		this.getFullName = function(){
-			return alert(this.firstname);	
+		 alert(this.firstname);	
 		}
 	}
 	var nameOne = new person('harsh');
+	console.log(nameOne);
+	console.log(nameOne.getFullName());
 </script>
 </body>
 </html>

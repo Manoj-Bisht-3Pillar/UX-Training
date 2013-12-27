@@ -16,9 +16,8 @@
         	<div class="col-lg-2">
             </div>
         	<div class="col-lg-8">
-            <h3>Factory way of creating object and nested function</h3>
-            	<input type="submit" class="btn btn-default" onClick="demo1.getName();" value="ReUsedlogic-1"></form>
-                <input type="submit" class="btn btn-default" onClick="demo2.getName();" value="ReUsedlogic-1"></form>
+            <h3>Nested functions or Nested classes</h3>
+            	
             </div>
             <div class="col-lg-2">
             </div>
@@ -26,18 +25,24 @@
     </div>
     
 <script type="text/javascript">
-	//factory function
-	var newPerson = function(name){
-		var person = new Object();
-		person.name = name;
-		person.getName = function(){
-			return alert(this.name);
-		}	
-		 return person;
-	}
-	var demo1 = newPerson('Harsh');	
-	var demo2 = newPerson('Ankit');	
-	
+	var abc = function(){
+        this.nameC = "abc";
+                                //Method of abc class
+        this.dispclassName = function(){
+            console.log(this.nameC);
+        }
+    }
+    abc.prototype.cde = function(){
+           this.name = "cde";
+           this.dispcdeClass = function(){
+            console.log(this.name)
+        }
+
+    }
+   	var firstLevel = new abc();
+	var secondlevel =new firstLevel.cde();
+    console.log(firstLevel);
+    console.log(secondlevel);
 </script>
 </body>
 </html>
