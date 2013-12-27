@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+//This example shows that the closure contains any local variables that were declared inside the outer function before it exited. Note that the variable alice is actually declared after the anonymous function. The anonymous function is declared first: and when that function is called it can access the alice variable because alice is in the closure. Also sayAlice()(); just directly calls the function reference returned from sayAlice().
+function sayAshish() {
+  var sayAlert = function() { alert(ashish); }
+  // Local variable that ends up within closure
+  var ashish = 'Hello Ashish';
+  return sayAlert;
+ 
+}
+//In this case alert(alice); does not work because alice is not a global variable.
+</script>
+</head>
+
+<body>
+<input type="button" onclick="sayAshish()();" value="click" class="codeButton">
+</body>
+</html>
