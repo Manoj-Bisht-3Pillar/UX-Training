@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+ var logger = function(){
+	 var input = "Some message";
+	 this.logr = '';
+	 //function that is intializing things
+	 init : {
+		 if(configfile.input == 'console_log'){
+			 logr = 'console_log';
+			 console.log(logr);
+		 }
+	 }
+	 console.log(logr);
+	 //Function write data on console
+	 function console_log(){
+		function write1(){
+			console.log(input);	
+		}
+	 }
+	 
+	 return {
+		 writeP: function(){
+			 console.log(logr);
+			 var operatin = this + '.' + logr;
+			 var operation1 = new operatin();
+			 //return operatin.write1();
+		 }
+	}
+}
+
+//Config file
+configfile = {
+	input:'console_log'
+}
+
+var demo = new logger();
+var demo2 = new demo.writeP();
+</script>
+</body>
+</html>
