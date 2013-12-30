@@ -1,0 +1,34 @@
+<script type="text/javascript">
+    function logger() {
+    	var datafromconfig;
+    	var logChoice;
+        var xmlDoc=new ActiveXObject("MSXML.DOMDocument");
+        //console.log(xmlDoc);
+        //xmlDoc.async="false";
+		xmlDoc.load("C:\\Users\\ankit.rustagi\\Desktop\\training\\config.xml");
+		var readdata = xmlDoc.documentElement;
+		var data = readdata.childNodes(0);
+		datafromconfig= data.getElementsByTagName("Name")[0].text;
+		if (datafromconfig == 'console')
+			{
+			console_write()
+			}
+		else
+			file_write()
+
+	}
+	 function console_write(){
+	 	var msg = 'hello';
+	 	console.log(msg);	
+	 }
+
+	 function file_write(){
+	 	var msg = 'hello bhai sir ji teri ma ki';
+	 	var Scr = new ActiveXObject("Scripting.FileSystemObject");
+		var CTF = Scr.CreateTextFile("C:\\Users\\ankit.rustagi\\Desktop\\training\\log.txt", true);
+		CTF.WriteLine(msg);
+		CTF.Close();
+	 }
+
+    window.onload = logger;
+</script>
