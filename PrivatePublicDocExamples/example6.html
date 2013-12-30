@@ -1,0 +1,13 @@
+<html>
+<head>
+	<script> 
+		function static_method(){	
+			static_method.counter++;
+			document.write("visited " + static_method.counter + "<br>")
+		}
+		static_method.counter = 0;
+		obj1 = new static_method();
+		obj2 = new static_method();
+	</script>
+</head>
+</html>

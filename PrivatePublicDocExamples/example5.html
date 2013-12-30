@@ -1,0 +1,16 @@
+<html>
+<head>
+	<script> 
+		function callme(){
+			// Private
+			var message = "Hello sir !!"
+			// Privileged
+			this.display = function(){
+				return message;
+			}
+		}
+		object = new callme();
+		alert(object.display());
+	</script>
+</head>
+</html>
