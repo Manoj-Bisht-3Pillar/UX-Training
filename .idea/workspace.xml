@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d211e77c-f954-4753-a443-95fc8259b8a7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Harsh/4thdayExercise/createfolder.html" afterPath="$PROJECT_DIR$/Harsh/4thdayExercise/createfolder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Harsh/4thdayExercise/loger.html" afterPath="$PROJECT_DIR$/Harsh/4thdayExercise/loger.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UX-Training.iws" />
@@ -45,10 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3varscope-withvar.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="3varscope-withvar.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Harsh/3rddayExercise/3varscope-withvar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="87" selection-start="967" selection-end="967" vertical-scroll-proportion="0.39292365" vertical-offset="367" max-vertical-offset="918">
+            <state line="34" column="87" selection-start="967" selection-end="967" vertical-scroll-proportion="-8.115385" vertical-offset="367" max-vertical-offset="918">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Module-newswidget.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Harsh/4thdayExercise/Module-newswidget.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="12" selection-start="732" selection-end="732" vertical-scroll-proportion="0.8193669" vertical-offset="19" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
@@ -205,6 +212,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="4thdayExercise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UX-Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UX-Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Harsh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="3rddayExercise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -307,13 +332,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Harsh/3rddayExercise/objectconst-4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Harsh/3rddayExercise/objectconst-3(factory function).html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="14" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="833">
@@ -407,7 +425,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Harsh/3rddayExercise/3varscope-withvar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="87" selection-start="967" selection-end="967" vertical-scroll-proportion="0.39292365" vertical-offset="367" max-vertical-offset="918">
+        <state line="34" column="87" selection-start="967" selection-end="967" vertical-scroll-proportion="-8.115385" vertical-offset="367" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Harsh/4thdayExercise/Module-newswidget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="12" selection-start="732" selection-end="732" vertical-scroll-proportion="0.8193669" vertical-offset="19" max-vertical-offset="748">
           <folding />
         </state>
       </provider>
