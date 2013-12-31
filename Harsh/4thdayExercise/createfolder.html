@@ -11,7 +11,7 @@ var CreateFolder = function()
 {
   var fso, fldr;
   fso = new ActiveXObject("Scripting.FileSystemObject");
-  fldr = fso.CreateFolder("C:\\MyTest");
+  fldr = fso.CreateFolder("~C:\\MyTest");
   Response.Write("Created folder: " + fldr.Name);
 }
 

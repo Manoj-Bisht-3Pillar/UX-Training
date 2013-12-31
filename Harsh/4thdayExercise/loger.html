@@ -7,6 +7,7 @@
 
 <body>
 <script>
+//constructor function as we create object from it or we can call it as class
  var logger = function(){
 	 var input = "Some message";
 	 this.logr = '';
@@ -17,19 +18,17 @@
 			 console.log(logr);
 		 }
 	 }
-	 console.log(logr);
+	 //console.log(logr);
 	 //Function write data on console
 	 function console_log(){
-		function write1(){
-			console.log(input);	
-		}
-	 }
+		console.log(input);	
+	}
 	 
 	 return {
 		 writeP: function(){
-			 console.log(logr);
 			 var operatin = this + '.' + logr;
-			 var operation1 = new operatin();
+			 this.operatin();
+			 //var operation1 = new operatin();
 			 //return operatin.write1();
 		 }
 	}
@@ -41,7 +40,7 @@ configfile = {
 }
 
 var demo = new logger();
-var demo2 = new demo.writeP();
+//var demo2 = new demo.writeP();
 </script>
 </body>
 </html>
