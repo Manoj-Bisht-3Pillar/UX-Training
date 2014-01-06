@@ -1,0 +1,91 @@
+<!doctype html>
+<body>
+
+<head>
+<style type="text/css">
+     body {
+   margin: 0;
+   padding: 0;
+   top: 0;
+   left: 0;
+}
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:-10;
+}
+#body_container{
+  position:absolute;
+    top:20%;
+    right: 10%; 
+    z-index:1;
+    background:#d2d2d2;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding:5px;
+}
+   h1 {
+       color : #000000;
+       text-align : center;
+   }
+     #main label {
+      color: #2D2D2D;
+      font-size: 15px;
+      width:10px;
+      display: inline;
+    }
+   form {
+       width: 300px;
+       margin: 0 auto;
+   }
+
+   form input[type=text]{
+    width: 100px;
+    position: 300px auto;
+    text-align:center;
+    float: center
+
+   }
+
+   form input[type=submit]{
+    width: 100px;
+    position: 300px auto;
+    text-align:center;
+    float: center
+
+   }
+   @font-face {
+ font-family: aller-display;
+ src: url('Blox2.ttf');
+}
+p,h1 {
+ font-family: aller-display;
+ font-size: 2em;
+}
+comment {
+  color: red;
+}
+ </style>
+</head>
+
+<body>
+
+<div id='container' width = '500px'>
+  <video width=100% id = "Video_clouds" src="calm.mp4" autoplay>
+  </video>
+  <div id = "body_container">
+    <h1>Your Details</h1>
+    <form id='sampleform' method='get' action='sampleappoptions.html' >
+    	<label>First Name: </label><input type='text' name='fname' id='fname' pattern="[a-zA-Z]+" title = "Enter First Name, Characters Only" required = "true" placeholder = "Enter First Name"/><br><comment>*field is mandatory</comment> <br>
+      <label>Last Name: </label><input type='text' name='lname' id='lname' pattern="[a-zA-Z]+"/ placeholder="Enter Last Name"><br>
+      <label>Email: </label><input type='email' name='email' id='email' pattern = '^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$' required = "true" title = "Must enter valid gmail getElementById"/ placeholder="ex. abc@gmail.com"><br>
+      <label>Landline Number</label><input type='text' name='landline' id='landline' pattern = "^0[1-9]{2}-[0-9]{8}" title = "ex. 011-12345678" placeholder ="ex. 011-12345678"/><br>
+      <label>Mobile</label><input type='text' name='mobile' id='mobile' pattern ="^0[1-9]{1}[0-9]{9}" title="Mobile Number" placeholder = "ex. 09999999999"/><br>
+      <p><input type='submit' onClick="myFunction()" name='Submit' value='Submit' /></p>
+    </form>
+    <p>Please Submit the Details</p>
+  </div>
+ </div>
+</body>
+</html>
