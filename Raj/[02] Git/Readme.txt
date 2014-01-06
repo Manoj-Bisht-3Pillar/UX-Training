@@ -32,8 +32,13 @@
 // Initialize project
 	$ git init
 
+
 // Add your project files in staging area
 	$ git add .
+
+// Add deleted files in staging area
+	$ git add -u .
+
 
 // Check the status of your files in project folder
 	$ git status
@@ -44,8 +49,12 @@
 // Check commit logs by Command
 	$ git log
 
-// Connect to remote server to upload the project to GitHub
+
+// Connect to remote server to upload the project to GitHub (one time setup)
 	$ git remote add origin “Repo path on GitHub”
 
 // Push Project to GitHub
 	$ git push origin master
+
+// To get the latest
+	$ git pull origin master
