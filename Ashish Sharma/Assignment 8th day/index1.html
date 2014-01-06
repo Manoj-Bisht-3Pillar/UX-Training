@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+<style>
+container{
+	background:#ccc;
+	padding:5px 5px 5px 100px;
+	position:absolute;
+	top:10%;
+	left:30%;
+	width:500px;
+	border:20px solid #000;
+}
+form {
+	padding:0;
+}
+
+</style>
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+<canvas id="canvas"></canvas>
+<script>
+var canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext("2d");
+
+canvas.width = 1348;
+canvas.height = 750;
+
+
+var background = new Image();
+background.src = "images/sohp_hero.jpg.v2";
+
+background.onload = function(){
+    ctx.drawImage(background,0,0);   
+}
+</script>
+<container>
+	<div class="video-container">
+        <video width="320" height="240" controls loop autoplay>
+          <source src="images/HistoryoftheInternet.mp4" type="video/mp4">
+        </video>
+	
+  	</div>
+    
+    <form>
+    <h2>Please Enter your feedback</h2>
+    
+        <div class="formrow">
+            <div class="icon" data-icon="e"><input type="text" placeholder="enter your name" required /></div>
+        </div>
+        
+        <div class="formrow">
+            <div class="icon" data-icon="f"><input type="email" placeholder="enter your email" required /></div>
+        </div>
+               <div class="formrow">
+            <div class="icon" data-icon="d"><input type="text" placeholder="enter your comment" /></div>
+        </div>
+        <div class="formrow">
+            <input type="submit" class="button" value="Send"/>
+        </div>
+    </form>
+</container>
+</body>
+</html>
