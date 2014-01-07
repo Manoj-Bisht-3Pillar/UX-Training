@@ -110,5 +110,23 @@ book
 	position: absolute;
 	z-index: 1;
 	top: 600px;
-	left: 450px;	
+	left: 500px;	
 }
+/*Canvas shaping*/
+container{
+    display:inline-block;
+    width:600px; 
+    height:480px;
+    margin: 0 auto; 
+    top:200px;
+    left: 300px;
+    background: white; 
+    position:absolute; 
+    border:5px solid black; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 50px #333;
+    z-index: 1;
+  }
+gameCanvas{
+    position:absolute;
+    z-index:20;}

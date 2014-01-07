@@ -6,10 +6,27 @@
 		@font-face { font-family: Delicious; 
 		src: url('stainy/Stainy_PersonalUseOnly.ttf'); }
 	</style>
+	<script type="text/javascript">
+	function drawShape(){
+	 var canvas = document.getElementById('mycanvas');
+	 if (canvas.getContext){
+
+	    var ctx = canvas.getContext('2d');
+	    var img = new Image();
+	    img.src = 'image2.jpg';
+	    var width = 550;
+	    var height = 450;
+
+	    img.onload = function(){
+	       ctx.drawImage(img,30,30, width, height);
+	    }
+	  }
+	}
+	</script>
 	</head>
-<body>
+<body onload="drawShape();">
 	<div class="container" >
-		<video width=100% id = "Video_clouds" src="BeautifulClouds.mp4" autoplay>
+		<video width=100% id = "Video_clouds" src="BeautifulClouds.mp4" autoplay loop>
 		</video>
 		<div class="overlay">
 	   		<ul>
@@ -19,9 +36,11 @@
 				<li><a href="help_us.html">Help Us</a></li>
 			</ul>
 		</div>
-		<div class='image_draw'>
-			<img src='image2.jpg' width=600px height=300px>
-		</div>
+		<container>
+		    <gameCanvas>
+	    		<canvas id="mycanvas" width='600px' height='500px' ></canvas>
+	  		</gameCanvas>
+		</container>
 		<book>
 			Lalit Sachdeva
 		</book>
