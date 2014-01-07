@@ -1,0 +1,43 @@
+<script>
+
+function Pet(name, species, hello)
+{
+    this.name = name;
+    this.species = species;
+    this.hello = hello;
+}
+ 
+Pet.prototype = {
+    sayHello : function()
+    {
+        alert(this.hello);
+    }
+}
+
+function Cat(name, hello, breed, whiskerLength)   // subclass
+{
+    this.name = name;
+    this.hello = hello;
+    this.breed = breed;
+    this.whiskerLength = whiskerLength;
+}
+ 
+Cat.prototype = new Pet();
+
+var rufus = new Cat("rufus", "miaow", "Maine Coon", 7);  // calling "cat" class
+
+rufus.sayHello(); // calling baseclass function through subclass object
+
+Cat.prototype.catNap = function()  // subclass function
+{
+    alert(this.name + ": zzzzz…");
+}
+rufus.catNap();
+
+Cat.prototype.sayHello = function()  // subclass function
+{
+    alert(this.hello + " from a cat..");
+}
+rufus.sayHello();
+
+</script>

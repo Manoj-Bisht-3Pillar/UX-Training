@@ -1,0 +1,32 @@
+<html>
+<head>
+	<script> 
+	function Gadget(name, color) { 
+  		this.name = name; 
+  		this.color = color; 
+  		this.whatAreYou = function(){ 
+   		return 'I am a ' + this.color + ' ' + this.name; 
+  		}
+  	}
+  	//Now adding new properities into function Gadget
+ 	//Gadget.prototype.price = 100;
+	// Gadget.prototype.rating = 3;
+	// Gadget.prototype.getInfo = function() { 
+ 	//		return '<br> Rating: ' + this.rating + ', price: ' + this.price;
+	// };
+	
+		Gadget.prototype = { 
+	  	price: 100, 
+  		rating: 3, 
+  		getInfo: function() { 
+   			return '<br> Rating: ' + this.rating + ', price: ' + this.price; 
+  		}
+	};
+
+	calculator = new Gadget("Casio", "Black");
+	document.write(calculator.whatAreYou());
+	document.write(calculator.getInfo());
+	</script>
+</head>
+
+</html>

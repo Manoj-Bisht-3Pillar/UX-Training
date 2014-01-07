@@ -1,0 +1,84 @@
+body {
+    background-color:silver; 
+    font-family:arial;
+    margin: 0px;
+    padding: 0px;
+}
+@font-face
+{
+font-family: myFirstFont;
+src: url('fonts/BOOMERAN.TTF'),
+     url('fonts/BOOMERAN.eot'); /* IE9 */
+}
+
+#imageCanvas #animateCanvas{
+    border:1px solid #000000;
+}
+
+#heading{text-align:center}
+
+#navigation ul{
+    list-style:none;
+    display:block;
+    background-color:#E2E2E2;
+    width:100%;
+    height:33px;
+}
+
+#navigation ul li{
+    float:left;
+}
+
+#navigation ul li a{
+    float:left;
+    display:block;  
+    padding:7px 10px;
+    text-decoration:none;
+}
+#navigation ul li a:hover{
+    float:left;
+    display:block;  
+    padding:7px 10px;
+    background-color:red;
+}
+#navigation ul li a:active{
+    float:left;
+    display:block;  
+    padding:7px 10px;
+    background-color:yellow;
+    text-decoration:none;
+}
+
+#form_container{
+    position:relative;
+    top: 50px;
+    left:100px;
+    background-color:seagreen;
+    width:800px;
+    padding:20px;
+}
+
+textcontent{
+    font-family: myFirstFont;
+    font-size: 25px;
+    width: 350px; 
+    margin-left: 101px; 
+    margin-top: 80px; 
+    padding: 10px;
+    background-color: coral;
+    display: block;
+    float:left;
+}
+
+#top{
+    position:fixed;
+    padding: 40px;
+    z-index: +3;
+    bottom:100px;
+    right:40px;
+    background-color: yellow;
+    
+}
+
+div.clear{clear:both;}
+

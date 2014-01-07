@@ -1,0 +1,445 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	margin:0;
+	
+}
+body{
+	font-size:12px;
+	font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+	color:#fff;
+	line-height:normal;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+
+header,nav,footer,section{
+	display:block;	
+}
+a{
+	text-decoration:none;
+	outline:none;
+}
+
+/* Glyphicons */
+@font-face { 
+	font-family: 'metro'; 
+	src: url('fonts/metro-icons-fixed-2000-webfont.eot'); 
+	src: url('fonts/metro-icons-fixed-2000-webfont.eot?#iefix') format('embedded-opentype'),  
+	url('fonts/metro-icons-fixed-2000-webfont.woff?x=1351252202') format('woff'),  
+	url('fonts/metro-icons-fixed-2000-webfont.ttf?x=1351252202') format('truetype'),  
+	url('fonts/metro-icons-fixed-2000-webfont.svg?x=1351252202#metroicons8-3regular') format('svg'); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+.glyphicon {
+  position: relative;
+  display: inline-block;
+  font-family: 'metro';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  font-size:20px;
+  line-height: 1;
+}
+
+.glyphicon-user:before {
+  content: "\25B";
+}
+
+.glyphicon-userAdd:before {
+  content: "\2b";
+}
+.glyphicon-mail:before {
+  content: "\C0";
+}
+.glyphicon-pencil:before {
+  content: "\2721";
+}
+.glyphicon-mobile:before {
+  content: "\2754";
+}
+
+
+
+/* Tags */
+video{
+	position:relative;
+	max-height:100%;
+	min-width:100%;
+	height:600px;
+	background:url(html5&css3.png);
+}
+h1{
+	font-size:30px;	
+	color:#525252;
+	width:100%;
+	display:block;
+	margin-bottom:15px;
+}
+h2{
+	font-size:25px;
+	color:#666666;
+	margin-bottom:10px;
+}
+section{
+	font-size:20px;
+	line-height:35px;
+	color:#767676;
+	margin-bottom:10px;
+}
+footer{
+	background:#333;
+	width:100%;
+	float:left;
+}
+
+/* Common classes */
+.text-align-center{
+	text-align:center;	
+}
+.button{
+	padding:13px 23px;
+	font-size:19px;
+	background:#666;
+	color:#e1e1e1;
+	border-radius:7px;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	display:block;
+	width:70px;
+}
+.clear-fix{
+	clear:both;	
+}
+.divider{
+	 text-align:center;
+}
+.divider .divider-bottom{
+	display:inline-block;
+	border-top:1px solid #dcdcdc;	
+	height:0px;
+	box-shadow: 0px 1px 2px #dcdcdc;
+	width:100%;
+}
+
+
+/* Classes */
+
+.video-wrap{
+	width:100%;
+	height:800px;
+	position:relative;
+	top:0;
+	left:0;
+	float:left;
+}
+.container{
+	width:1090px;
+	margin:0 auto;
+}
+
+.row{
+	padding-left:10px;
+	padding-right:10px;
+}
+.column-1{
+	float:left;
+	width: 8.333333333333332%;
+	position:relative;
+}
+.column-2{
+	width: 16.666666666666664%;
+	float:left;
+	position:relative;
+}
+.column-3{
+	width: 25%;
+	float:left;
+	position:relative;
+}
+.column-4{
+	width: 33.33333333333333%;
+	float:left;
+	position:relative;
+}
+.column-5{
+	width: 41.66666666666667%;
+	float:left;
+	position:relative;
+}
+.column-6{
+	width: 50%;
+	float:left;
+	position:relative;
+}
+.column-7{
+	width: 58.333333333333336%;
+	float:left;
+	position:relative;
+}
+.column-8{
+	width: 66.66666666666666%;
+	float:left;
+	position:relative;
+}
+.column-9{
+	width: 75%;
+	float:left;
+	position:relative;
+}
+.column-10{
+	width: 83.33333333333334%;
+	float:left;
+	position:relative;
+}
+.column-11{
+	width: 91.66666666666666%;
+	float:left;
+	position:relative;
+}
+.column-12{
+	width: 100%;
+	float:left;
+	position:relative;
+}
+.support-wrap{
+	float:left;
+	width:100%;
+	padding:5px;
+	text-align:center;
+}
+.support-wrap span{
+	width:15px;
+	height:15px;
+	display:inline-block;
+	margin-right:5px;
+}
+.support-wrap label{
+	margin-right:5px;
+}
+.ie-color{
+	background:#4d5361;	
+}
+.firefox-color{
+	background:#ffb553;	
+}
+.chrome-color{
+	background:#3097dc;	
+}
+.safari-color{
+	background:#949fb2;	
+}
+.opera-color{
+	background:#fa4444;	
+}
+.historyofinternet{
+	width:100%;
+	float:left;
+	background:#c6c6c6;
+	color:#fff;
+	border-top:1px solid #999;
+}
+.rowform{
+	position:relative;
+	float:left;
+	margin-bottom:10px;
+	width:100%;
+}
+.rowform label{
+	width:90%;
+	font-size:30px;
+	background:#fff;
+	padding:0 10px;
+}
+.rowform label input{
+	display:inline-block;
+	margin:0;
+	border:0;
+	padding:15px 5px;
+	width:91%;
+}
+.rowform .button{
+	border:0;
+	width:95%;
+}
+.rowform input:focus{
+	outline:none;	
+}
+
+
+/* Controls css */
+
+/* Carousel*/
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+          transition: 0.6s ease-in-out left;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  line-height: 1;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+
+.carousel-inner > .active {
+  left: 0;
+}
+
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-inner > .next {
+  left: 100%;
+}
+
+.carousel-inner > .prev {
+  left: -100%;
+}
+
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+
+.carousel-inner > .active.left {
+  left: -100%;
+}
+
+.carousel-inner > .active.right {
+  left: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  /*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);*/
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.carousel-control.left {
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: serif;
+}
+
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}

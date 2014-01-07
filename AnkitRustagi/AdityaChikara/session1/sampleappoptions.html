@@ -1,0 +1,81 @@
+<!--doctype html>
+<body>
+
+<head>
+<style type="text/css">
+     body {
+       background-color : #E0E0E0;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+</head>
+
+<body>
+<table>
+    <tr>  
+      <td><button type="button" id="1" onclick="window.location = 'videocanvas.html'">Play For Fun</button></td>
+      <td><button type="button" id="1" onclick="window.location = 'markcanvas.html'">Pie Chart Marks</button></td>
+    </tr>
+    <tr>  
+      <td><button type="button" id="1" onclick="window.location = 'fontface.html'">Whats Your Name</button></td>
+      <td></td>
+    </tr>
+</table>
+</body>
+</html-->
+<!doctype html>
+<body>
+
+<head>
+<style type="text/css">
+     body {
+   margin: 0;
+   padding: 0;
+   top: 0;
+   left: 0;
+}
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:-10;
+}
+#body_container{
+  position:absolute;
+    top:20%;
+    right: 10%; 
+    z-index:1;
+    background:#d2d2d2;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding:5px;
+      }
+      @font-face {
+ font-family: aller-display;
+ src: url('Blox2.ttf');
+}
+button {
+ font-family: aller-display;
+ font-size: 2em;
+}
+ </style>
+</head>
+
+<body>
+
+<div id='container' width = '500px'>
+  <video width=100% id = "Video_clouds" src="calm.mp4" autoplay>
+  </video>
+  <div id = "body_container">
+    <table>
+    <tr>  
+      <td><button type="button" id="1" onclick="window.location = 'videocanvas.html'">Play For Fun</button></td>
+      <td><button type="button" id="1" onclick="window.location = 'markcanvas.html'">Pie Chart Marks</button></td>
+    </tr>
+    </table>
+  </div>
+ </div>
+</body>
+</html>
+

@@ -1,0 +1,3 @@
+A very simple example is say Logger, suppose we need to implement the logger and log it to some file according to date time. In this case, we cannot have more than one instances of Logger in the application otherwise the file in which we need to log will be created with every instance.
+
+We use Singleton pattern for this and instantiate the logger when the first request hits or when the server is started.

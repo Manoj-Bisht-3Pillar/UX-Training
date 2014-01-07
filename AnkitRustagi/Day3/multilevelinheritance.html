@@ -1,0 +1,74 @@
+<html>
+<!-- Inheritance_Multiple_Level_Prototypes.html
+   Copyright (c) 2013 by Dr. Herong Yang, herongyang.com
+-->
+<head>
+<title>Building Multiple Level Prototypes</title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+// Modifying the base prototype object
+
+   Object.prototype.copyright = "neerajJoshi.com";
+</script>
+<script type="text/javascript">
+// Defining the "Book" constructor
+
+function Book(title, author) {
+   this.title = title;
+   this.author = author;
+   this.getDesc = getDescription;
+}
+
+function getDescription() {
+   return "\""+this.title+"\" by "+this.author;
+}
+
+   var myPrototype = new Object();
+   Book.prototype = myPrototype;
+   Book.prototype.price = 9.99;
+   Book.prototype.constructor = Book;
+   Book.prototype.toString = getString;
+
+function getString() {
+   return this.author+"/"+this.title+"/"+this.price;
+}
+</script>
+<script type="text/javascript">
+// Defining the second level constructor "EBook"
+
+function EBook(url) {
+   this.url = url;
+}
+   
+   var myBook = new Book("Programming Tutorials", "Herong Yang");
+   console.log(myBook)
+   EBook.prototype = myBook;
+   console.log(EBook);
+   Book.prototype.constructor = EBook;
+   
+// Creating an object of "EBook"
+   var myEBook = new EBook("www.herongyang.com");
+
+// Adding a local property 
+   myEBook.title = "JavaScript Tutorials";
+
+   // Showing properties of this object
+   showObject(myEBook, "myEBook");
+
+function showObject(object, name) {
+   document.writeln("\n\""+name+"\" properties:");
+   for (var item in object) {
+      if (object.hasOwnProperty(item)) 
+         var inheritance = "Local";
+      else 
+         var inheritance = "Inherited";
+      document.writeln("   "+item+": "+inheritance+": "
+         +object[item]);
+   }
+}
+</script>
+</pre>
+</body>
+</html>

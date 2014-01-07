@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+var CreateFolder = function()
+{
+  var fso, fldr;
+  fso = new ActiveXObject("Scripting.FileSystemObject");
+  fldr = fso.CreateFolder("~C:\\MyTest");
+  Response.Write("Created folder: " + fldr.Name);
+}
+
+var folder = new CreateFolder();
+console.log(folder);
+
+	//intialize ActiveXObject and create an object of Scripting.FileSystemObject.
+	//var fso =  new ActiveXObject("Scripting.FileSystemObject");	
+	
+	//Create a folder with specified name at the specified location.
+	//var f = fso.createFolder('~/Desktop/myFolder');
+	//fso = null;
+ 
+</script>
+</body>
+</html>

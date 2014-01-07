@@ -1,0 +1,207 @@
+<html>
+
+<head>
+
+    <title>Pie Chart</title>
+    <style type="text/css">
+    body {
+   margin: 0;
+   padding: 0;
+   top: 0;
+   left: 0;
+}
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:-10;
+}
+#body_container{
+  position:absolute;
+    top:20%;
+    right: 10%; 
+    z-index:1;
+    background:#d2d2d2;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding:5px;
+}
+    </style>
+
+    <script type="text/javascript">
+
+        var can, ctx,
+
+            numSamples,
+
+            xScalar, yScalar,
+
+            radius, quarter;
+
+        // data sets -- set literally or obtain from an ajax call
+
+        var dataName = [ "Hindi", "English", "Math", "Science","Social Science" ];
+
+        var q1Value = [ 90, 85, 60, 55,95];
+
+        var q2Value = [ 55, 90, 75, 80,79 ];
+
+        var q3Value = [ 85, 55, 65, 82,83];
+
+        var fillColor = ["red", "blue", "green", "orange", "yellow"];
+
+        function init() {
+
+            // set this value for your data
+
+            numSamples = 5;
+
+            can = document.getElementById("can");
+
+            quarter = document.getElementById("quarter");
+
+            ctx = can.getContext("2d");
+
+            drawPie();
+
+        }
+
+        function drawPie() {
+
+            radius = can.height / 3;
+
+            var midX = can.width / 2;
+
+            var midY = can.height / 2;
+
+            ctx.strokeStyle = "black";
+
+            ctx.font = "18pt Helvetica";
+
+            ctx.textAlign = "center";
+
+            ctx.textBaseline = "middle";
+
+            // get data set
+
+            var dataValue = q1Value;
+
+            if (quarter.value == "q2")
+
+                dataValue = q2Value;
+
+            if (quarter.value == "q3")
+
+                dataValue = q3Value;
+
+            // calculate total value of pie
+
+            var total = 0;
+
+            for (var i = 0; i < numSamples; i++) {
+
+                total += dataValue[i];
+
+            }
+
+            // get ready to draw
+
+            ctx.clearRect(0, 0, can.width, can.height);
+
+            var oldAngle = 0;
+
+ 
+
+            // for each sample
+
+            for (var i = 0; i < numSamples; i++) {
+
+                // draw wedge
+
+                var portion = dataValue[i] / total;
+
+                var wedge = 2 * Math.PI * portion;
+
+                ctx.beginPath();
+
+                var angle = oldAngle + wedge;
+
+                ctx.arc(midX, midY, radius, oldAngle, angle);
+
+                ctx.lineTo(midX, midY);
+
+                ctx.closePath();
+
+                ctx.fillStyle = fillColor[i];
+
+                ctx.fill();    // fill with wedge color
+
+                ctx.stroke();  // outline in black
+
+ 
+
+                // print label
+
+                // set angle to middle of wedge
+
+                var labAngle = oldAngle + wedge / 2;
+
+                // set x, y for label outside center of wedge
+
+                // adjust for fact text is wider than it is tall
+
+                var labX = midX + Math.cos(labAngle) * radius * 1.5;
+
+                var labY = midY + Math.sin(labAngle) * radius * 1.3 - 12;
+
+                // print name and value with black shadow
+
+                ctx.save();
+
+                ctx.shadowColor = "black";
+
+                ctx.shadowOffsetX = 1;
+
+                ctx.shadowOffsetY = -1;
+
+                ctx.fillStyle = fillColor[i];
+
+                ctx.fillText(dataName[i], labX, labY);
+
+                ctx.fillText("Marks " + dataValue[i], labX, labY + 25);
+
+                ctx.restore();
+
+                // update beginning angle for next wedge
+
+                oldAngle += wedge;
+
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body onload="init()">
+
+    <div align="center" id='container' width = '500px'>
+        <video width=100% id = "Video_clouds" src="calm.mp4" autoplay>
+        </video>
+        <div id = "body_container">
+            <h2>Marks Per Quater</h2>
+            <canvas id="can" height="400" width="500">
+            </canvas>
+            <select id="quarter" onchange="drawPie()" style="font:18pt Helvetica">
+                <option value="q1">Semster1</option>
+                <option value="q2">Semster2</option>
+                <option value="q3">Semster3</option>
+            </select>
+        </div>
+    </div>
+
+</body>
+
+</html>
+

@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title> Prototypes </title>
+	<script language="javascript" type="text/javascript">
+	function message(name){
+			this.name = name;
+		}
+	message.prototype.write = function(){
+    	alert("Hello " + this.name);
+		}
+	var name = new message("Lalit");
+	name.write();
+
+	</script>
+</head>
+<body> 
+
+</body>
+</html>

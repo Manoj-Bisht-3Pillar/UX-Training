@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <link href="../globalcss/bootstrap.css" rel="stylesheet" />
+    <link href="custom.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="header">
+    <h2>UX - Exercise</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+            <h3>Function scope - Show in console</h3>
+
+        </div>
+        <div class="col-lg-2">
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    // If you don't declare your local variables with the var keyword, they are part of the global scope
+
+    var name = "Harsh";
+
+    function showCelebrityName(){
+        console.log(name);
+    }
+    function showOrdinaryName(){
+        var name="Ankit";           // name  declared in the function so it is not the part of global scope
+        console.log(name);
+    }
+    showCelebrityName();
+    //Will print Harsh - Global scope variable
+
+    showOrdinaryName();
+    //Will print Ankit and overwrite the global name
+
+    showCelebrityName();
+    //Will again print Harsh
+</script>
+</body>
+</html>

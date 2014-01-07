@@ -17,8 +17,8 @@
             </div>
         	<div class="col-lg-8">
             <h3>Factory way of creating object and nested function</h3>
-            	<input type="submit" class="btn btn-default" onclick="demo1.getName();" value="ReUsedlogic-1"></form>
-                <input type="submit" class="btn btn-default" onclick="demo2.getName();" value="ReUsedlogic-1"></form>
+            	<input type="submit" class="btn btn-default" onClick="demo1.getName();" value="ReUsedlogic-1"></form>
+                <input type="submit" class="btn btn-default" onClick="demo2.getName();" value="ReUsedlogic-1"></form>
             </div>
             <div class="col-lg-2">
             </div>
@@ -33,7 +33,7 @@
 		person.getName = function(){
 			return alert(this.name);
 		}	
-		return person;
+		 return person;
 	}
 	var demo1 = newPerson('Harsh');	
 	var demo2 = newPerson('Ankit');	

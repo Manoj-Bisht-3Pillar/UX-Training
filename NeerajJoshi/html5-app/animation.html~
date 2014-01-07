@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="animation.js"></script>
+    </head>
+    <body>
+        <div id = "container">
+            <div id = "header">
+                <div id = "heading">
+                    <h1> HTML 5 Form inputs and Custom tags</h1>
+                </div>
+                <div id = "navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="canvas.html">Canvas Application</a>
+                        </li>
+                        <li>
+                            <a href="animation.html">Animation</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div id = "content">
+                <div>
+                    <audio controls autoplay>
+                        <source src="media/airplane-fly-over-03.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio> 
+                </div>
+                <canvas id="animateCanvas" width = "1080" height = "500"></canvas>
+
+            </div>
+        </div>
+    </body>
+</html>

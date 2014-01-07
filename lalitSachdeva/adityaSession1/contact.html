@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Html 5</title>
+	<link rel="stylesheet" type="text/css" href="style_sheet.css">
+	
+	<link rel="stylesheet" type="text/css" href="style_sheet.css">
+	<style>
+		@font-face { font-family: Delicious; 
+		src: url('stainy/Stainy_PersonalUseOnly.ttf'); }
+	</style>
+	</head>
+<body>
+	<div class="container" >
+		<video width=100% id = "Video_clouds" src="BeautifulClouds.mp4" autoplay>
+		</video>
+		<div class="overlay_contact">
+	   		<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about_us">About Us</a></li>
+				<li><a href="contact">Contact Us</a></li>
+				<li><a href="#help_us">Help Us</a></li>
+			</ul>
+		</div>
+		<div class='form_indent'>
+			<form id="signup">
+				<h1>Sign up now!</h1>
+				
+				<h2>Fields marked (*) are required</h2>
+				
+				<fieldset>
+					<h3 >Your details</h3>
+					<ol>
+						<li >Name * <input type="text" id="fullname" name="fullname" placeholder="Full name" required /><br><br>
+						</li>
+						<li>
+							Email *<input type="email" id="email" name="email" placeholder="e.g. lalit@example.net" title="Please enter a valid email" required />
+							<span class="invalid">Please enter a valid email address</span>
+							<span class="valid">Thank you for entering a valid email</span><br><br>
+						</li>
+						<li>
+							Phone *<input type="tel" id="tel" name="tel" pattern="\d{10}" placeholder="Please enter a ten digit phone number" required />
+							<span class="invalid">No spaces or brackets</span>
+							<span class="valid">That's what we wanted!</span>
+						</li>
+					</ol>
+				</fieldset>
+				<input type="submit" value="Sign up" />
+			</form>
+		</div>
+	</div>
+</body>
+</html>

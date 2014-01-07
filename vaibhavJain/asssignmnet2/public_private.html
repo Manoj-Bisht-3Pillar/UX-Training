@@ -1,0 +1,27 @@
+<html>
+<head>
+ <title> Private and Public scope. </title>
+ <script language="javascript" type="text/javascript">
+  function message(){
+   var privName = "Private 2";
+   var publicName1 = "Public2";
+   this.name = "vaibhav Public var"  ;
+   var other_name = "Private var";
+   return{
+    MYval:publicName1,
+    Myval2:privName
+   };
+  }
+   object = new message();
+   document.write(object.name);
+   document.write(object.other_name);
+   document.write(object.privName);
+   document.write(object.publicName1);
+    document.write(object.MYval);
+    document.write(object.Myval2);  
+ </script>
+</head>
+<body> 
+
+</body>
+</html>

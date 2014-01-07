@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script> //defining anonymous function
+	    var revealed = function(){
+      var a = [1,2,3];
+      function abc(){
+          return (a[0]*a[1])+a[2];
+      }
+
+      return {
+        name: 'revealed',
+        callFunction: abc
+   }
+}();
+alert(revealed.name);    //=> 'revealed'
+alert(revealed.callFunction()); //=> 5 (1*2+3)
+	</script>
+</head>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" />
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+<canvas id="canvas"></canvas>
+<script>
+var canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext("2d");
+
+canvas.width = 1348;
+canvas.height = 750;
+
+
+var background = new Image();
+background.src = "images/sohp_hero.jpg.v2";
+
+background.onload = function(){
+    ctx.drawImage(background,0,0);   
+}
+</script>
+<container>
+<div class="logo"></div>
+	<form>
+    	<h2>Fill the form to see the videos</h2><br>
+        <input type="text" name="name" required placeholder="Name"><br>
+       
+        <input type="text" name="email" required placeholder="email">
+        <br>
+        <a href="index1.html"><input type="button" value="send"></a>
+    </form>
+</container>
+</body>
+</html>

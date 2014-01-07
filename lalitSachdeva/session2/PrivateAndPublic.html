@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title> Private and Public scope. </title>
+	<script language="javascript" type="text/javascript">
+		var x = "abc";
+		function message(){
+			this.x = "def";
+			document.write(this.x);
+		}
+		
+		object = new message();
+		document.write(object.x);
+		object.message();		
+	</script>
+</head>
+<body> 
+
+</body>
+</html>

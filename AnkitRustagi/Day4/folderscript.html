@@ -1,0 +1,31 @@
+<script type="text/javascript">
+
+function folderExist(){
+	var currentDate = new Date()
+	  var day = currentDate.getDate()
+	  var month = currentDate.getMonth() + 1
+	  var year = currentDate.getFullYear()
+	  folder_name = year + "" + month + "" + day
+	  alert(folder_name)
+	  var fso  = new ActiveXObject("Scripting.FileSystemObject");
+	  var sFolderPath = "C:\\Users\\ankit.rustagi\\Desktop\\training\\"+ folder_name;
+	  var sfilePath = sFolderPath + "\\log.txt"
+	  msg = 'hello bhai'
+	  if (!fso.FolderExists(sFolderPath)) {
+		  alert("Folder does not exist!");
+		  fso.CreateFolder(sFolderPath)
+		  var CTF = fso.CreateTextFile(sfilePath, true);
+		  CTF.WriteLine(msg);
+		  CTF.Close();
+		  return;
+		}
+	  else{
+	  	  var CTF = fso.CreateTextFile(sfilePath, true);
+		  CTF.WriteLine(msg);
+		  CTF.Close();
+		  return;
+	  }
+
+}
+window.onload = folderExist
+</script>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+//constructor function as we create object from it or we can call it as class
+ var logger = function(){
+	  var log = '';
+	 //function that is intializing things
+	 init : {
+		 if(configfile.input == 'console_log'){
+             log = new console_write();
+		 } else if(configfile.input == 'text_file'){
+             log = new file_write();
+         }
+	 }
+
+	 return {
+		 callToWriteMethod: function(){
+			 log.writeMessage();
+		 }
+	}
+     //Function write data on console
+     function console_write(){
+         return {
+             writeMessage : function(){
+                 var msg = 'hello';
+                 console.log(msg);
+             }
+         }
+     }
+
+     function file_write(){
+         return {
+             writeMessage : function(){
+                 textfileGeneration();
+             }
+         }
+     }
+
+     function textfileGeneration(){
+         var message = 'Message to be displayed on file';
+         var Scr = new ActiveXObject("Scripting.FileSystemObject");
+         var CTF = Scr.CreateTextFile("C:\\Users\\harsh.lamba\\Desktop\\filefolder\\log.txt", true);
+         CTF.WriteLine(message);
+         CTF.Close();
+     }
+}
+
+//Config file
+configfile = {
+    input:'text_file'
+	//input:'console_log'
+}
+
+var demo = new logger();
+demo.callToWriteMethod();
+
+</script>
+</body>
+</html>

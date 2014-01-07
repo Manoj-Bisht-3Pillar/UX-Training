@@ -1,0 +1,62 @@
+body
+{
+	margin:0;
+	padding:0;
+	font-family:segoeui;
+	font-size:14px;
+	
+}
+
+@font-face
+{
+ font-family: 'segoeui';
+ src: url('fonts/segoeui.eot');
+ src: url('fonts/segoeui.eot?#iefix') format('embedded-opentype'), url('fonts/segoeui.ttf') format('truetype'), url('fonts/segoeui.svg#segoeui') format('svg');	
+}
+#container
+{
+	position:fixed;
+	top:35%;
+	left:35%;
+	margin:0 auto;
+	border:3px solid #F30;
+	background:#F3F3F3;
+	padding:10px;
+	display:inline-block;
+}
+#container span
+{
+	display:block;
+	margin:0 0 5px;
+}
+#container span label
+{
+	width:100px;
+	display:inline-block;
+}
+#container span input
+{
+	border-radius: 5px;
+	border:1px solid #333;
+	padding:5px;
+}
+#container span:nth-child(4) input
+{
+	border:none;
+}
+#container span:nth-child(5) input
+{
+	cursor:pointer;
+}
+svg
+{
+	position:absolute;
+	z-index:0;
+	right:-40px;
+	top:140px;
+}
+svg polygon
+{
+	width:50px;
+	height:50px;
+}

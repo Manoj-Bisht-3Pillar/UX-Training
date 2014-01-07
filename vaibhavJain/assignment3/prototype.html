@@ -1,0 +1,48 @@
+<html>
+<h4>prototype inheritance</h4>
+<script>
+var Person = function() {      // base class
+    this.canTalk = true;
+    this.greet = function() {
+        if (this.canTalk) {
+            alert("baseclass Hi, I'm " + this.name);
+        }
+    };
+};
+
+var Employee = function(name, title) {  //sub class uses its own function and override the base class function
+    this.name = name;
+    this.title = title;
+    this.greet = function() {
+        if (this.canTalk) {
+            alert("Hi, I'm " + this.name + ", the " + this.title);
+        }
+    };
+};
+Employee.prototype = new Person();
+
+var Customer = function(name) {          //sub class using the function of base class always when called
+    this.name = name;
+};
+Customer.prototype = new Person();
+
+var Mime = function(name) {              //sub class
+    this.name = name;
+    this.canTalk = false;
+	alert(name)
+};
+Mime.prototype = new Person();
+
+var bob = new Employee('Bob','Builder');
+var joe = new Customer('Joe');
+var rg = new Employee('Red Green','Handyman');
+var mike = new Customer('Mike');
+var mime = new Mime('Mime');
+
+bob.greet();
+joe.greet();
+rg.greet();
+mike.greet();
+mime.greet();
+</script>
+<html>

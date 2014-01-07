@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div id="article-list"></div>
+<input type="button" value="click" id="more-button"/>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+var s,
+NewsWidget = {
+	settings : {
+		'numarticles': 5,
+		'articlelist': $('#article-list'),
+		'moreButton' : $('#more-button')
+	},
+	init : function(){
+		s = this.settings;	
+	},
+	bindUIActions : function(){
+		s.moreButton.on("click", function(){
+			NewsWidget.getMoreArticles(s.numarticles);									  
+		});	
+	},
+	getMoreArticles  :function(num){
+		console.log('testing');
+	}
+}
+console.log(s);
+(function(){NewsWidget.init()}());
+</script>
+</body>
+</html>

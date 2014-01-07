@@ -1,0 +1,180 @@
+[33mcommit 1096af35e111d9f422610f4d74e013876c20f17d[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Dec 26 01:38:02 2013 +0530
+
+    .
+
+[33mcommit 9e13d2ed9b19c4e576d4f45834e909682e0cb568[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Dec 26 01:14:39 2013 +0530
+
+    .
+
+[33mcommit 06e36cf62ab1a831692b16cc540b85d9af3d5d22[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Wed Dec 25 19:58:38 2013 +0530
+
+    Updated new inheritance file
+
+[33mcommit c7971fa2b4316dfeef578b71d15e3d0320322206[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Wed Dec 25 19:24:26 2013 +0530
+
+    Updated inheritance and private/public/function
+
+[33mcommit 47f700715193883a82c2450e98fa0b55c009fa12[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Wed Dec 25 18:26:45 2013 +0530
+
+    Updated Closure files
+
+[33mcommit 1fd340ff74bef7b6063329322a7823d7c8a5a8c0[m
+Merge: 6a1a8b2 1855e16
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Tue Dec 24 04:13:14 2013 -0500
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 6a1a8b232d127b922f91eaf155cdeddd0291b05f[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Tue Dec 24 04:11:48 2013 -0500
+
+    Updated syntax
+
+[33mcommit 1855e163b478fee3b126375ce1dd21930e7a2b5c[m
+Author: ashishdesign <ashish.sharma@3pillar.com>
+Date:   Tue Dec 24 12:54:48 2013 +0530
+
+    Delete post-method-result.html
+
+[33mcommit 8e27212f954bb42c560ff2fb91d7c839fae15eb5[m
+Author: unknown <ashish.sharma@NDI-LAP-354.3pillar.corp>
+Date:   Tue Dec 24 12:34:36 2013 +0530
+
+    my first assignment
+
+[33mcommit 9dd7239d99bac731fc0bcf64f8fd21606d777eb5[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Tue Dec 24 01:41:24 2013 -0500
+
+    Added my assignments
+
+[33mcommit b82a6e76fe74172c0d319f799fda1df1de4a8bbe[m
+Merge: 57f2b25 4d9a1dc
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Tue Dec 24 11:12:09 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 57f2b25efec4bde90b97f7919b926999edefb536[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Tue Dec 24 11:11:29 2013 +0530
+
+    Adding day1 Assignments
+
+[33mcommit 4d9a1dc6d4438d150fbd795065a2e04a558759dd[m
+Merge: 8c328c0 51df009
+Author: “manoj.bisht” <“manoj.bisht@3pillarglobal.com”>
+Date:   Tue Dec 24 11:10:06 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 8c328c020fa1a75c15e700b9bd8cf5ab3585974d[m
+Author: “manoj.bisht” <“manoj.bisht@3pillarglobal.com”>
+Date:   Tue Dec 24 11:09:43 2013 +0530
+
+    files added
+
+[33mcommit 51df009dd99bef61e3356bf55f9bf6b5c6938944[m
+Merge: 20b46e3 7db101f
+Author: rinku <rinku.kashyap@3pillarglobal.com>
+Date:   Tue Dec 24 11:03:50 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 7db101fe26da78c5a735c9171da76b206671fa72[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Tue Dec 24 11:01:49 2013 +0530
+
+    committing my code
+
+[33mcommit 20b46e3c8d2b9c0e6acffee8e35ed1aef2dc7966[m
+Author: rinku <rinku.kashyap@3pillarglobal.com>
+Date:   Tue Dec 24 11:01:01 2013 +0530
+
+    files added
+
+[33mcommit 37c6bd301bafcc825abed3b6a96445ddd7a72c01[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Tue Dec 24 10:57:22 2013 +0530
+
+    Added new file for css
+
+[33mcommit 4744f440582406786d28049fefc72236a047ed59[m
+Merge: df30551 b73114b
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Tue Dec 24 10:55:59 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit b73114bfec2f05bab117ceb80f251034de76d81f[m
+Author: ashish tripathi <ashish.tripathi@3pillarglobal.com>
+Date:   Tue Dec 24 10:54:17 2013 +0530
+
+    Added files
+
+[33mcommit df305512cbfe9cea235c65fd53ee3925c6ce2d6b[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Tue Dec 24 10:50:45 2013 +0530
+
+    comitting update for assignments session1
+
+[33mcommit b37eb9397ba5cf06a284ac50ae64abf5235af3af[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Tue Dec 24 10:44:54 2013 +0530
+
+    Adding files
+
+[33mcommit c4b6659bdef253b0665409136fc00e18fbd778f3[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Tue Dec 24 10:42:17 2013 +0530
+
+    Added folder
+
+[33mcommit ce74f1662ef381e162a4595b86bbc8dc1a35a781[m
+Merge: 3917c7b a684ae3
+Author: unknown <Kailash.shastri@NDI-LAP-200.3pillar.corp>
+Date:   Tue Dec 24 09:09:27 2013 +0530
+
+    Merge branch 'master' of github.com:Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 3917c7b58679ef10f509bc9f80374195022aebc4[m
+Author: unknown <Kailash.shastri@NDI-LAP-200.3pillar.corp>
+Date:   Tue Dec 24 09:05:12 2013 +0530
+
+    added kailash folder
+
+[33mcommit a684ae3d6b395ab2f6778c42e2fd14b5b7fc9591[m
+Author: rimbakasimba <nitinsingh81@gmail.com>
+Date:   Mon Dec 23 22:06:41 2013 +0530
+
+    1st version of training ppt
+
+[33mcommit 4a97a37be53d90062b4a6cec7381957b2d0d85c5[m
+Merge: a55b631 f30950e
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Mon Dec 23 20:44:41 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit a55b631067f2f8fa33e51a184d2f5ff932d6ebe0[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Mon Dec 23 20:43:19 2013 +0530
+
+    @nd commit
+
+[33mcommit f30950e76dc1617c7a80a4c188a0d0d744ca277e[m
+Author: unknown <Kailash.shastri@NDI-LAP-200.3pillar.corp>
+Date:   Mon Dec 23 20:28:54 2013 +0530
+
+    changed

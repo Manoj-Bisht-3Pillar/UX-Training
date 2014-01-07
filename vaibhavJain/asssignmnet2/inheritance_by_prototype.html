@@ -1,0 +1,19 @@
+<script>
+
+function employee(name,jobtitle,born)
+{
+this.name=name;
+this.jobtitle=jobtitle;
+this.born=born;
+}
+
+var vaib=new employee("vaibhav","eng.",1989);
+employee.prototype.salary = function () {
+	alert("This is Prototype and my name is :" + this.name);
+}
+
+vaib.salary();
+
+document.write("my name is " + vaib.name + "\n");
+
+</script>
