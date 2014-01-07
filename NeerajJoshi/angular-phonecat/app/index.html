@@ -1,0 +1,52 @@
+<!doctype html>
+<html ng-app="phonecatApp">
+<head>
+  <meta charset="utf-8">
+  <title>My HTML File</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="PhoneListCtrl">
+ 
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+	 Sort by:
+	<select ng-model="orderProp">
+	  <option value="name">Alphabetical</option>
+	  <option value="age">Newest</option>
+	</select>
+
+      Search:
+      <hr>
+	    Any: <input ng-model="search.$"> <br>
+	    Name only <input ng-model="search.name"><br>
+	    Snippet only <input ng-model="search.snippet"><br>
+	    Equality <input type="checkbox" ng-model="strict"><br>
+
+    </div>
+    <div class="span10">
+      <!--Body content-->
+ 
+      <ul class="phones">
+         <li ng-repeat="phone in phones | filter:search:strict | orderBy:orderProp">
+         {{phone.name}}
+          <p>{{phone.snippet}}</p>
+          <b>{{phone.age}}</b>
+         </li>
+        
+      </ul>
+ 
+    </div>
+  </div>
+</div>
+ <p>Total number of phones: {{phones.length}}</p>
+ <table>
+    <tr><th>row number</th></tr>
+    <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i+1}}</td></tr>
+ </table>
+</body>
+</html>
