@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" ng-app='phonecatApp'>
+<head>
+  <meta charset="utf-8">
+  <title>My HTML File</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/controllers1.js"></script>
+</head>
+<body ng-controller="PhoneListCtrl">
+ <div class="container-fluid">
+	  <div class="row-fluid">
+		    <div class="span2">
+		      <!--Sidebar content-->
+		 Search: <input ng-model="query">
+			Sort by:
+			<select ng-model="orderProp">
+			  <option value="name">Alphabetical</option>
+			  <option value="age">Newest</option>
+			</select>
+			 
+			 
+			<ul class="phones">
+			  <li ng-repeat="phone in phones | filter:query | orderBy:orderProp:reverse">
+			    {{phone.name}}
+			    <p>{{phone.snippet}}</p>
+			  </li>
+			</ul>	
+		    </div>
+	  </div>
+  </div>
+</div>
+</body>
+</html>
