@@ -1,0 +1,48 @@
+<html>
+<head>
+<style type="text/css">
+
+  /* initial state */
+  #outerspace {
+    position: relative;
+    height: 560px;
+    background: #0c0440 url(images.jpg) no-repeat;
+	background-size:cover;
+    color: #fff;
+  }
+  
+  div.rocket {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
+	-webkit-transition-duration:1s;
+  }
+
+
+  /* hover final state */
+  #outerspace:hover div.rocket {
+    -webkit-transform: translate(540px,-350px) scaleX(-2);
+    -moz-transform: translate(540px,-350px) scaleX(-2);
+    -o-transform: translate(540px,-350px) scaleX(-2);
+    -ms-transform: translate(540px,-350px) scaleX(-2);
+    transform: translate(540px,-350px) scaleX(-2);
+  }
+ 
+</style>
+
+</head>
+<body>
+<div id="outerspace">
+<div class="rocket">
+
+<img src="hulk.png" alt="face" height="200" width="100">
+</div>earth
+</div>
+
+</body>
+
+</html>
