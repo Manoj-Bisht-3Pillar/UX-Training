@@ -4,11 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/style.css" />
 <title>Untitled Document</title>
-
 </head>
 
 <body>
-<canvas id="canvas"></canvas>
+<canvas id="canvas" class="blur pic"></canvas>
 <script>
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d");
@@ -25,15 +24,21 @@ background.onload = function(){
 }
 </script>
 <container>
-<div class="logo"></div>
-	<form>
+    <logo>
+    <svg>
+    <polygon style="fill-rule: evenodd;  fill: #00ff00; stroke: black;"
+        points="148,16  116,96  196,48  100,48  180,96" />
+ </svg>
+ </logo>
+	<form action="index1.html">
     	<h2>Fill the form to see the videos</h2><br>
-        <input type="text" name="name" required placeholder="Name"><br>
+        <input id="name" name="name" value="" required  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" aria-required="true" aria-describedby="name-format"><br>
        
-        <input type="text" name="email" required placeholder="email">
+        <input type="email" name="email" placeholder="email" pattern="[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}" required>
         <br>
-        <a href="index1.html"><input type="button" value="send"></a>
+       <input type="submit" value="Submit">
     </form>
+   	
 </container>
 </body>
 </html>

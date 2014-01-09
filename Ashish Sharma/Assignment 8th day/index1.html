@@ -41,30 +41,30 @@ background.onload = function(){
 }
 </script>
 <container>
-	<div class="video-container">
-        <video width="320" height="240" controls loop autoplay>
+	<video-container>
+        <video width="320" height="240" controls>
           <source src="images/HistoryoftheInternet.mp4" type="video/mp4">
-        </video>
+        </video-container>
 	
   	</div>
-    
     <form>
-    <h2>Please Enter your feedback</h2>
-    
+    	<h2>Please Enter your feedback</h2><br>
         <div class="formrow">
-            <div class="icon" data-icon="e"><input type="text" placeholder="enter your name" required /></div>
+            <div class="icon" data-icon="e"><input id="name" name="name" value="" required  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" aria-required="true" aria-describedby="name-format"></div>
         </div>
-        
-        <div class="formrow">
-            <div class="icon" data-icon="f"><input type="email" placeholder="enter your email" required /></div>
+       <div class="formrow">
+            <div class="icon" data-icon="f">
+        <input type="email" name="email" placeholder="email" pattern="[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}" required>
         </div>
-               <div class="formrow">
+        </div>
+         <div class="formrow">
             <div class="icon" data-icon="d"><input type="text" placeholder="enter your comment" /></div>
         </div>
-        <div class="formrow">
-            <input type="submit" class="button" value="Send"/>
-        </div>
+       <input type="submit" class="button" value="Send"/>
     </form>
+   	
+
+ 
 </container>
 </body>
 </html>

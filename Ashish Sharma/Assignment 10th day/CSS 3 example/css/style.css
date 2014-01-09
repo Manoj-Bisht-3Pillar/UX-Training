@@ -1,0 +1,44 @@
+
+  /* initial state */
+  #space {
+    position: relative;
+    height: 650px;
+	width:100%;
+    background: #0c0440 url(../images/field-green-hills-image.jpg);
+    color: #fff;
+  }
+  div.dore {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    -webkit-transition: all 3s ease-in;
+    -moz-transition: all 3s ease-in;
+    -o-transition: all 3s ease-in;
+    transition: all 3s ease-in;
+  }
+  div.dore div {
+    width: 150px;
+    height: 198px;
+    background: url(../images/doraemon.png) no-repeat;
+    -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
+  }
+
+  /* hover final state */
+  #space:hover div.dore{
+    -webkit-transform: translate(940px,-500px);
+    -moz-transform: translate(940px,-500px);
+    -o-transform: translate(940px,-500px);
+    -ms-transform: translate(940px,500px);
+    transform: translate(940px,-500px);
+  }
+  #space:hover div.dore div {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+
