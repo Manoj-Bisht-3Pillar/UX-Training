@@ -1,0 +1,79 @@
+    /* Container properties */
+    #scene {
+       margin-left: 300px;
+       width: 600px;
+       height: 500px;
+       position: relative;
+       perspective: 1000;
+       overflow: hidden;
+       /* Solid fallback for old browsers */
+       background: #0099ff;
+       /* Firefox */
+       background: -moz-linear-gradient(top, #0099ff, #00ccff);
+       /* WebKit - Chrome and Safari */
+       background: -webkit-linear-gradient(top, #0099ff, #00ccff);
+       /* Internet Explorer 10 */
+       background: -ms-linear-gradient(top, #0099ff, #00ccff);
+       /* Opera */
+       background: -o-linear-gradient(top, #0099ff, #00ccff);
+       /* general syntax */
+       background: linear-gradient(top, #0099ff, #00ccff);
+    }
+
+    /* Image Properties */
+    
+    .blades {
+       /*image is 120 x 120 px*/
+       position: absolute;
+       top: 16px;
+       left: 196px;
+       /* Firefox */
+       -moz-animation: bladeRotate 10s ease-in-out infinite;
+       /* WebKit - Chrome and Safari */
+       -webkit-animation: bladeRotate 10s ease-in-out infinite;
+       /* Opera */
+       -o-animation: bladeRotate 10s ease-in-out infinite;
+       /* general syntax */
+       animation: bladeRotate 10s ease-in-out infinite;
+    }
+    #animated{
+    position:absolute;
+    left:80px;
+    top:-20px;
+    animation:moveUp 5s;
+    -moz-animation:moveUp 5s; /* Firefox */
+    -webkit-animation:moveUp 5s; /* Safari and Chrome */
+    }
+
+    @keyframes moveUp
+                {
+                from {left: 480px;} 
+                to{left:20px;} 
+                }
+                @-moz-keyframes moveUp
+                {
+                from {left: 480px;} 
+                to{left:20px;} 
+                }
+                @-webkit-keyframes moveUp
+                {
+                from {top: 480px;} 
+                to{top:0px;}
+                }
+    /* Keyframe animations */
+
+    /* Firefox */
+    @-moz-keyframes bladeRotate {
+       from { -moz-transform: rotateY(0deg); }
+       to { -moz-transform: rotateY(1440deg); }
+    }
+    /* WebKit - Chrome and Safari */
+    @-webkit-keyframes bladeRotate {
+       from { -webkit-transform: rotateY(0deg); }
+       to { -webkit-transform: rotateY(1440deg); }
+    }
+    /* general syntax */
+    @keyframes bladeRotate {
+       from { transform: rotateY(0deg); }
+       to { transform: rotateY(1440deg); }
+    }
