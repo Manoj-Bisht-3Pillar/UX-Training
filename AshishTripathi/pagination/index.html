@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Pagination using jQuery - A tutorial by akshitsethi.me</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="Owner" content="Ashish Tripathi" />
+<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.pages.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("div.holder").jPages({
+	    containerID : "content",
+	    perPage: 5
+  	});
+});
+</script>
+</head>
+<body>
+	<div class="header">
+		<div class="header-inner clearfix">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="holder"></div>
+
+		<ul id="content">
+			<li><span>Item 1</span></li>
+			<li><span>Item 2</span></li>
+			<li><span>Item 3</span></li>
+			<li><span>Item 4</span></li>
+			<li><span>Item 5</span></li>
+			<li><span>Item 6</span></li>
+			<li><span>Item 7</span></li>
+			<li><span>Item 8</span></li>
+			<li><span>Item 9</span></li>
+			<li><span>Item 10</span></li>
+			<li><span>Item 11</span></li>
+			<li><span>Item 12</span></li>
+			<li><span>Item 13</span></li>
+			<li><span>Item 14</span></li>
+			<li><span>Item 15</span></li>
+			<li><span>Item 16</span></li>
+			<li><span>Item 17</span></li>
+			<li><span>Item 18</span></li>
+			<li><span>Item 19</span></li>
+			<li><span>Item 20</span></li>
+		</ul>
+	</div>
+</body>
+</html>
