@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Component</title>
+
+<style>
+body {
+   margin: 0;
+   padding: 0;
+   top: 0;
+   left: 0;
+}
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:-10;
+}
+#body_container{
+  position:absolute;
+    top:20%;
+    right: 10%; 
+    z-index:1;
+    background:#d2d2d2;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding:5px;
+}
+.rotate{
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+	
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-o-transition-property: -o-transform;
+	transition-property: transform;
+	
+	overflow:hidden;
+
+	}	
+
+.rotate:hover	
+{ 
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg); 
+	-o-transform:rotate(360deg);
+}	
+</style>
+
+
+
+</head>
+
+
+
+
+<body>
+<div id='container' width = '500px'>
+  <video width=100% id = "Video_clouds" src="calm.mp4" controls autoplay loop muted preload="auto">
+  </video>
+  <div id = "body_container">
+    <a href = "https://www.facebook.com/"><img src="1.png" class="rotate" /></a>
+	<a href = "https://www.linkedin.com/"><img src="2.png" class="rotate" /></a>
+	<a href = "https://www.gmail.com/"><img src="3.png" class="rotate" /></a>
+	<a href = "https://twitter.com/"><img src="4.png" class="rotate" /></a>
+	<a href = "https://yahoomail.com/"><img src="5.png" class="rotate" /></a>
+  </div>
+ </div>
+</body>
+</html>
