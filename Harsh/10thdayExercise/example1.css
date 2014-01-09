@@ -1,0 +1,40 @@
+body{
+	background:#f5ede4;
+}
+
+a{
+	display:block;
+	width:400px;
+	margin:auto;
+	padding: 75px 100px;
+	text-decoration:none;
+	color:#fff;
+	font-family:arial;
+	font-weight:bold;
+	text-align:center;
+}
+
+#one a{
+	background:#4e90c7;
+	-webkit-transition: background 2s ease;
+}
+#one a:hover{
+	background:#97b7d1;
+}
+#two a{
+	background:#8bc9b3;
+	-webkit-transition: width 2s ease-out;
+}
+#two a:hover{
+	width:450px;
+}
+#third a{
+	background:#b4db9a;
+	-webkit-transition: right 2s ease;
+	position:relative;
+	right:0;
+}
+#third a:hover{
+position:relative;
+	right:100px;
+}
