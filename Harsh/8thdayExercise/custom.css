@@ -62,7 +62,15 @@ a{
 .glyphicon-mobile:before {
   content: "\2754";
 }
-
+.glyphicon-chart:before {
+  content: "\29B";
+}
+.glyphicon-form:before {
+  content: "\50B";
+}
+.glyphicon-video:before {
+  content: "\10AE";
+}
 
 
 /* Tags */
@@ -125,8 +133,51 @@ footer{
 	box-shadow: 0px 1px 2px #dcdcdc;
 	width:100%;
 }
-
-
+.web-component{
+	padding:5px 7px;
+	background:#909090;
+	border:1px solid #7f7f7f;
+	position:fixed;
+	top:25%;
+	right:5%;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	z-index:9999;
+}	
+.web-component .elements{
+	padding:5px 10px;
+	font-size:24px;
+	color:#fff;
+	text-align:center;
+}
+.web-component .elements a.glyphicon-chart{
+	display:inline-block;
+	color:#d6d6d6;
+	font-size:50px;
+	width:30px;
+}
+.web-component .elements a.glyphicon-chart:hover{
+	color:#fff;
+}
+.web-component .elements a.glyphicon-video{
+	display:inline-block;
+	color:#d6d6d6;
+	font-size:50px;
+	width:30px;
+}
+.web-component .elements a.glyphicon-video:hover{
+	color:#fff;
+}
+.web-component .elements a.glyphicon-form{
+	display:inline-block;
+	color:#d6d6d6;
+	font-size:50px;
+	width:30px;
+}
+.web-component .elements a.glyphicon-form:hover{
+	color:#fff;
+}
 /* Classes */
 
 .video-wrap{
@@ -442,4 +493,13 @@ footer{
   color: #ffffff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+
+
+div#curve, div#feedback, div#video{
+	-webkit-transition: all 0.5s ease; 
+  -moz-transition: all 0.5s ease; 
+  -ms-transition: all 0.5s ease; 
+  -o-transition: all 0.5s ease;  
 }
