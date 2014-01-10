@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Web Components</title>
+	<script>
+			function updateClicked(nameTagSelector, textBoxSelector) {
+			  var text = document.querySelector(textBoxSelector);
+			  document.querySelector(nameTagSelector).textContent = text.value;
+			  text.value = '';
+			  text.focus();
+			}
+	</script>
+</head>
+<body>
+		<p>Shadow DOM:</p>
+		<div id="NameTag">Sameer</div>
+		<p>
+			<label for="NewName">New name:</label>
+			<input name="NewName" value="lalit">
+			<button onclick="updateClicked('#NameTag', 'input[name=NewName]');">Update</button>
+		</p>
+</body>
+</html>

@@ -15,7 +15,7 @@ window.onload = function(){
 	planeObj.onload = function() {
         ctx.drawImage(planeObj, 69, 50);
 	};
-	planeObj.src = 'images/aeroplane-transparent.png';
+	planeObj.src = 'images/aeroplane-left-right.png';
 
 	var aclObj = new Image();
 

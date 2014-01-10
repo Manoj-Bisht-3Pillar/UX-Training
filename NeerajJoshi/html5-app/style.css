@@ -21,7 +21,6 @@ src: url('fonts/BOOMERAN.TTF'),
     list-style:none;
     display:block;
     background-color:#E2E2E2;
-    width:100%;
     height:33px;
 }
 
@@ -34,6 +33,7 @@ src: url('fonts/BOOMERAN.TTF'),
     display:block;  
     padding:7px 10px;
     text-decoration:none;
+	
 }
 #navigation ul li a:hover{
     float:left;
@@ -131,16 +131,42 @@ social{
     left:0px;
     padding:10px;
     border: 3px solid green;
-
 }
-social a{
-    float:left;
+/*social a img{
     z-index:+3;
     padding:5px;
-
+	margin:0;
+	display:block;
+	transform: translate(0,0);
+	-moz-transform: -moz-translate(0,0);
+	-webkit-transform: -webkit-translate(0,0);
+	transition:transform 2s ease-in;
+	-moz-transition:transform 2s ease-in;
+	-webkit-transition:transform 2s ease-in;
 }
-social a:hover{
-    margin-left:15px;
+social a img:hover{
+	transform: translate(10px,0);
+	-moz-transform: -moz-translate(10px,0);
+	-webkit-transform: -webkit-translate(10px,0);
+}*/
+a.transition{
+	display:block;
+	z-index:25;
+	margin:0;
+	padding:5px;
+	position:relative;
+	transform:translate(0,0);
+-ms-transform:translate(0,0); /* IE 9 */
+-webkit-transform:translate(0,0);
+transition: transform 0.5s ease;
+-moz-transition: -moz-transform 0.5s ease;
+-webkit-transition: -webkit-transform 0.5s ease;
+	
 }
-
+a.transition:hover {
+	position:relative;
+	transform:translate(10px,0);
+-ms-transform:translate(10px,0); /* IE 9 */
+-webkit-transform:translate(10px,0);
+}
 
