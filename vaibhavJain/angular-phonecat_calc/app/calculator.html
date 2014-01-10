@@ -1,0 +1,56 @@
+<html ng-app="phonecatApp">
+<head>
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+ <style>
+	#form1{
+	margin:auto;
+	font:35px arial;
+	background-color:green;
+	width:500px;
+	padding:5px auto;
+	}
+   button:hover
+   {cursor:pointer;
+   background-color:red;
+   }
+  button:active
+  {
+  background-color:grey;
+  }
+  button{
+  height: 40px;
+  width: 60px;
+  }
+ 
+ </style>
+
+</head>
+<body>
+<div ng-app>
+    <div ng-controller="Calculator">
+        
+ <form id="form1">
+ <div class="well">
+ <label>Enter a value :</label>
+ <input ng-model="firstNumber" type="number"> <br/><br>
+            
+          
+ <label>Another Value:</label>
+ <input ng-model="secondNumber" type="number"> <br/><br>
+ 
+ <label>Operator:</label>
+ 
+ <button ng-click="add()">+</button>      
+ <button ng-click="sub()">-</button>
+ <button ng-click="mul()">*</button>
+ <button ng-click="div()">/</button><br><br>
+ Result: {{result}}
+ </div>
+ </form>
+ </div>
+</div>
+
+    </body>
+</html>
