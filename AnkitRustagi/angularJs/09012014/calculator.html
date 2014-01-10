@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app>
+<head>
+<script src="http://code.angularjs.org/1.2.7/angular.min.js"></script>
+<style type="text/css">
+body{
+    background-color: grey;
+}
+.divPos{
+    border: 2px solid;
+    position: absolute;
+    padding: 20px;
+    top: 30%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+}
+.btSet{
+    margin-top: 10px;
+    border-color: green;
+    background-color: pink;
+}
+label{
+    margin-left: 5px;
+}
+</style>
+</head>
+<body>
+    <div class="divPos">
+        <h1>Calculate</h1>
+        First Number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="number" name="input" ng-model="firstNum"><br>
+        Second Number : <input type="number" name="input" ng-model="secondNum"><br>
+        <button ng-click="sum = firstNum + secondNum" class="btSet">
+        Add
+        </button>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding Two Numbers: {{sum}}</label>
+        <br>
+        <button ng-click="substract = firstNum - secondNum" class="btSet">
+        Substract
+        </button>
+        <label>Substracting Two Numbers: {{substract}}</label><br>
+        <button ng-click="multi = firstNum * secondNum" class="btSet">
+        Multiply
+        </button>
+        <label>&nbsp;&nbsp;&nbsp;Multiplication of Two Number is: {{multi}}</label><br>
+        <button ng-click="divi = firstNum/secondNum" class="btSet">
+        Divide
+        </button>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Of Two Number is: {{divi}}</label>
+        <br>
+    </div>
+</body>
+</html>
