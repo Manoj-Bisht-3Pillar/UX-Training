@@ -1,0 +1,71 @@
+<html ng-app='calculate'>
+<head>
+<title> Calculator </title>
+<style type="text/css">
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.container{
+	margin: 10px;
+	padding: 5px;
+}
+.box{
+	float: left;
+	border: 3px solid #999C91;
+	height: 200px;
+    width: 100%;
+    background-color: #d2d2d2;
+    border-radius: 10px;
+}
+[type='number']{
+	display: inline;
+	width: 95%;
+	border: 3px solid #999C91;
+	border-radius: 5px;
+	margin:10px;
+}
+.buttons{
+
+}
+input[type='button']{
+	float: left;
+	display: block;
+	margin:0px 5px;
+	width: 60px;
+	height:30px;
+	text-align:center;
+	border: 3px solid #999C91;
+	border-radius: 5px;
+	background-color: #E0F783;
+	box-shadow: 2px 2px 1px #888888;;
+}
+input[type='button']:hover, input[type='button']:active{
+	box-shadow: 2px 2px 1px #888888;
+	color:#313328;
+	background-color: #B3C957;
+}
+
+</style>
+<script src="lib/angular/angular.js"></script>
+<script src="js/controllers.js"></script>
+</head>
+<body  >
+	<div class='container' >
+		<div class='box' ng-controller="calculator">
+			<strong>Calculator</strong>
+			<input ng-model='text1' type='number' />
+			<input ng-model='text2' type='number' />
+			<div class='buttons'>
+				<input type='button' value='Add' ng-click='add()'>
+				<input type='button' value='Sub' ng-click='sub()'>
+				<input type='button' value='Mul' ng-click='mul()'>
+				<input type='button' value='Div' ng-click='div()'>
+			</div>
+			<br><br>
+			<content>Result is: {{result}}</content>
+		</div>
+	</div>
+
+</body>
+</html>
