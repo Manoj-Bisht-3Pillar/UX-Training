@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Aeroplane</title>
+<style type="text/css">
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: blue;
+}
+div{
+	
+	margin: 10px;
+	padding: 10px;
+	background-image: url('images/aeroplane.png');
+	background-repeat: no-repeat;
+	width:100px;
+	height: 1000px;
+	position: absolute;
+	top:500px;
+	left:50px;
+
+}
+[class='container']{
+	animation-name:myfirst;
+	animation-duration: 10s;
+	animation-iteration-count:1;
+	animation-play-state:running;
+	animation-timing-function:linear;
+	animation-direction:normal;
+}
+@keyframes myfirst{
+0% {top:600px;}
+25% {top:450px;transform: rotateY(90deg);}
+50% {top:200px;transform: rotateY(120deg);}
+100% {top: -300px;transform: rotateY(170deg);}
+}
+
+</style>
+
+</head>
+<body>
+	<div class='container'>
+		
+	</div>
+</body>
+</html>

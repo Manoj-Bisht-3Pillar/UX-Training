@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="calcApp">
+<head>
+  <meta charset="utf-8">
+  <title>Simple calculator</title>
+  <link rel="stylesheet" href="css/calculator.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="calcCtrl">
+
+<div class="container">
+    <div class="operands">
+        <input type = "number" ng-model="valueA"/>
+        <input type = "number" ng-model="valueB"/>
+    </div>
+    <div id = "result">
+        <strong>Result:</strong> {{ result }}
+    </div>
+    <div class="operators">
+        <a class="pushbutton" ng-repeat="key in operations"
+            ng-click="calculate(key.label)">
+            {{ key.name }}
+            
+        </a>
+    </div>
+        
+</div>
+  
+ 
+ </body>
+</html>
