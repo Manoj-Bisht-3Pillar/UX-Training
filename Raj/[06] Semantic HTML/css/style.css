@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+	line-height: 1.5;
+	background: #eee;
+}
+
+h1, h2{
+	padding-bottom: 10px;
+	font-family: Georgia, "Times New Roman", serif;
+	text-align: center;
+}
+
+h1{
+	margin: 10px 0;
+}
+h2{
+	margin-bottom: 20px;
+	color: #333;
+	border-bottom: 1px solid #ccc;
+}
+
+/* General Class */
+.clr{
+	clear: both;
+}
+
+/* Layout */
+#wrapper{
+	width: 800px;
+	margin: 0 auto;
+}
+
+/* Container */
+.container{
+	margin: 20px 0 30px;
+	padding: 20px 20px 40px;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 4px #ccc;
+}
+
+/* Content */
+.content{
+	color: #666;
+}
+
+/* control */
+.control{
+	margin-bottom: 20px;
+}
+.control:last-child{
+	margin-bottom: 0;
+}
+.control label{
+	display: inline-block;
+	width: 100px;
+	margin-right: 20px;
+}
+
+/* btn */
+.btn{
+	outline: none;
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 30px;
+	height: 36px;
+	width: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #fff;
+	vertical-align: middle;
+	line-height: 16px;
+	white-space: nowrap;
+	border-radius: 4px;
+	border: 1px solid #3052D8;
+	background: #3b7af7;
+}
+a.btn{
+	height: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn:hover{
+	color: #fff;
+	border-color: #1A3AB6;
+	background: #2F63CA;
+}
+
+.btn:active{
+	color: #fff;
+	border-color: #1A3AB6;
+	background: #3b7af7;
+}

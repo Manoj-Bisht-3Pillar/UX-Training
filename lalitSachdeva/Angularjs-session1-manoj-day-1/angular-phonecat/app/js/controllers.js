@@ -12,3 +12,21 @@ phonecatApp.controller('PhoneListCtrl', function ($scope) {
   ];
   $scope.orderProp = 'name';
 });
+
+var calculate = angular.module('calculate', []);
+calculate.controller('calculator', function ($scope) {
+	$scope.add = function(){
+		$scope.result = $scope.text1 + $scope.text2;
+	}  
+	$scope.mul = function(){
+		$scope.result = $scope.text1 * $scope.text2;
+	}
+	$scope.sub = function(){
+		$scope.result = $scope.text1 - $scope.text2;
+	}  
+	$scope.div = function(){
+		$scope.result = $scope.text1 / $scope.text2;
+	}
+
+
+});

@@ -1,0 +1,31 @@
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span2">
+			<!--Sidebar content-->
+
+			<hr>
+			Any: <input ng-model="search.$"> <br> Name only <input
+				ng-model="search.name"><br> Phone only <input
+				ng-model="search.phone"><br> Equality <input
+				type="checkbox" ng-model="strict"><br> Sort by: <select
+				ng-model="orderProp">
+				<option value="name">Alphabetical</option>
+				<option value="age">Newest</option>
+			</select>
+
+		</div>
+		<div class="span10">
+			<!--Body content-->
+
+			<ul class="phones">
+				<li ng-repeat="phone in phones | filter:search:strict" | orderBy:orderProp"
+					class="thumbnail"><a href="#/phones/{{phone.id}}"
+					class="thumb"><img ng-src="{{phone.imageUrl}}"></a> <a
+					href="#/phones/{{phone.id}}">{{phone.name}}</a>
+					<p>{{phone.snippet}}</p></li>
+			</ul>
+			<p>detail view for {{phoneId}}</p>
+		</div>
+	</div>
+</div>

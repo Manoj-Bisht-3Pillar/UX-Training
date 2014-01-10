@@ -144,9 +144,9 @@ a.btn{
 	-moz-animation-name: starAni;
 	animation-name: starAni;
 
-	-webkit-animation-duration: 3s;
-	-moz-animation-duration: 3s;
-	animation-duration: 3s;
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+	animation-duration: 5s;
 	
 	-webkit-animation-direction: normal;
 	-moz-animation-direction: normal;
@@ -172,22 +172,22 @@ a.btn{
 }
 
 @-webkit-keyframes starAni{
-	25% { top: 0%; left: 90%; -webkit-transform: scale(2, 2); }
-	50% { top: 80%; left: 90%; -webkit-transform: scale(1, 1); }
-	75% { top: 80%; left: 0%; -webkit-transform: scale(2, 2); }
-	100% { top: 0%; left: 0%; -webkit-transform: scale(1, 1); }
+	25% { top: 0%; left: 90%; -webkit-transform: scale(2, 2) rotate(360deg); }
+	50% { top: 80%; left: 90%; -webkit-transform: scale(1, 1) rotate(720deg); }
+	75% { top: 80%; left: 0%; -webkit-transform: scale(2, 2) rotate(360deg); }
+	100% { top: 0%; left: 0%; -webkit-transform: scale(1, 1) rotate(0deg); }
 }
 
 @-moz-keyframes starAni{
-	25% { top: 0%; left: 90%; -moz-transform: scale(2, 2); }
-	50% { top: 80%; left: 90%; -moz-transform: scale(1, 1); }
-	75% { top: 80%; left: 0%; -moz-transform: scale(2, 2); }
-	100% { top: 0%; left: 0%; -moz-transform: scale(1, 1); }
+	25% { top: 0%; left: 90%; -moz-transform: scale(2, 2) rotate(360deg); }
+	50% { top: 80%; left: 90%; -moz-transform: scale(1, 1) rotate(360deg); }
+	75% { top: 80%; left: 0%; -moz-transform: scale(2, 2) rotate(360deg); }
+	100% { top: 0%; left: 0%; -moz-transform: scale(1, 1) rotate(360deg); }
 }
 
 @keyframes starAni{
-	25% { top: 0%; left: 90%; transform: scale(2, 2); }
-	50% { top: 80%; left: 90%; transform: scale(1, 1); }
-	75% { top: 80%; left: 0%; transform: scale(2, 2); }
-	100% { top: 0%; left: 0%; transform: scale(1, 1); }
+	25% { top: 0%; left: 90%; transform: scale(2, 2) rotate(360deg); }
+	50% { top: 80%; left: 90%; transform: scale(1, 1) rotate(360deg); }
+	75% { top: 80%; left: 0%; transform: scale(2, 2) rotate(360deg); }
+	100% { top: 0%; left: 0%; transform: scale(1, 1) rotate(360deg); }
 }

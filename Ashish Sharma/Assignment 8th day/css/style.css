@@ -9,6 +9,8 @@ body {
 a, a:hover {
 	text-decoration:none;
 }
+
+
 /* Glyphicons */
 @charset "UTF-8";
 
@@ -119,13 +121,22 @@ input {
 	color:#333;
 }
 
-input[type="button"] {
+input[type="submit"] {
 	width:220px;
 }
 
-.video-container {
-	width:700x;
+input.button {
+	width:315px;
+}
+
+video-container {
+	border-bottom: 1px solid #333;
+	padding-top:5px;
 	
+}
+
+logo {
+	margin-left:45px;
 }
 
 .feedback-form {
@@ -159,4 +170,16 @@ input[type="button"] {
 }
 .formrow input:focus{
 	outline:none;	
+}
+
+.blur img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.blur img:hover {
+  -webkit-filter: blur(5px);
 }
