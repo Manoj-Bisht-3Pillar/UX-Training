@@ -10,12 +10,13 @@ phonecatApp.controller('PhoneListCtrl', function ($scope, $http) {
 
 var calcApp = angular.module('calcApp', []);
 calcApp.controller('calcCtrl', function ($scope) {
-
+	$scope.valueA = 0;
+	$scope.valueB = 0;
 	$scope.operations = [
-	                        {label: "+", name: "Add"},
-	                        {label: "-", name: "Subtract"},
-	                        {label: "*", name: "Multiply"},
-	                        {label: "/", name: "Divide"}
+	                        {operator: "+", name: "Add"},
+	                        {operator: "-", name: "Subtract"},
+	                        {operator: "*", name: "Multiply"},
+	                        {operator: "/", name: "Divide"}
 	                    ];
     $scope.calculate = function(operator) {
     	if (operator == "+")
@@ -24,7 +25,12 @@ calcApp.controller('calcCtrl', function ($scope) {
 			$scope.result = $scope.valueA - $scope.valueB;
     	else if(operator == "*")
 			$scope.result = $scope.valueA * $scope.valueB;
-    	else if(operator == "/")
-			$scope.result = $scope.valueA / $scope.valueB;
+    	else if(operator == "/"){
+    		if ($scope.valueB == 0)
+    			$scope.result = "Error: division by zero"
+			else
+				$scope.result = $scope.valueA / $scope.valueB;
+    	}
+    		
     };
 });

@@ -12,15 +12,15 @@
 
 <div class="container">
     <div class="operands">
-        <input type = "number" ng-model="valueA"/>
-        <input type = "number" ng-model="valueB"/>
+        <input type = "number" ng-model="valueA" value = "1" />
+        <input type = "number" ng-model="valueB" value = "1" />
     </div>
     <div id = "result">
         <strong>Result:</strong> {{ result }}
     </div>
     <div class="operators">
         <a class="pushbutton" ng-repeat="key in operations"
-            ng-click="calculate(key.label)">
+            ng-click="calculate(key.operator)">
             {{ key.name }}
             
         </a>
