@@ -1,0 +1,47 @@
+<!doctype html>
+<script>
+
+    var myApp = angular.module("myApp", []);
+    myApp.factory("Messages", function () {
+    var Messages = {};
+    Messages.data = [
+        {
+            id: "1",
+            message: "Message 1"
+        },
+        {
+            id: "2",
+            message: "Message 2"
+        },
+        {
+            id: "3",
+            message: "Message 3"
+        },
+        {
+            id: "4",
+            message: "Message 4"
+        }
+    ];
+    return Messages;
+});
+
+function MessagesCtrl($scope, Messages) {
+    $scope.messages = Messages;
+
+    $scope.deleteItem = function (item) {
+        var index=Messages.data.indexOf(item);
+    debugger;
+        Messages.data.splice(index,1);
+    }
+}
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<div ng-app="myApp">
+    <ul ng-controller="MessagesCtrl">
+	    <li ng-repeat="message in messages.data" id="message{{message.id}}">
+            <a href="#" class="messageIcon">{{message.message}}</a> 
+            <a ng-click="deleteItem(message)">x</a>
+        </li>
+    </ul>
+</div>
+</html>

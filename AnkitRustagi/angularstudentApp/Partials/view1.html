@@ -1,0 +1,49 @@
+<div>
+    Name:
+    <br />
+    <input type="text" ng-model="filter.name" placeholder="search text"/>
+    <br />
+    <!--table class="table">
+	    <thead>
+	<tr>
+	            <th>Id</th>
+	            <th>Name</th>
+	            <th>Roll Number</th>
+	            <th>Description</th>
+	            <th>Image</th>
+	</tr>
+	</thead>
+	 
+	    <tbody>
+	<tr ng-repeat="student in students" id = "student{{student.id}}">
+	       <td>
+	       	<button ng-click="deleteItem(student)">{{student.name}} - Remove </button></td>
+	            <td>{{student.name }}</td>
+	            <td>{{student.rollNo }}</td>
+	            <td>{{student.description}}</td>
+	            <td>{{student.imageUrl }}</td>
+	        </tr>
+	</tbody>
+</table--> 
+	<ul>
+		<li ng-repeat = "student in students| filter:filter.name" >
+			 {{student.name}} &nbsp;Update: <input type="checkbox" ng-model="checked"><br/>
+			 <div ng-show="checked">
+			 	<input type="text" ng-model="newupdated.name" placeholder='Updated Name'/>
+			 	<input type="text" ng-model="newupdated.rollNo"  placeholder='Updated Roll Number'/>
+			 	<button ng-click="updateStudent($index,newupdated)" >Update</button>
+			 </div>
+			 	&nbsp;<button ng-click="deleteStudent($index)">Remove</button>
+	</ul>
+    <br />
+    Student Name:
+    <input type="text" ng-model="newstudent.name" placeholder="New Name"/>
+    <br />
+
+    Student Roll Number:
+    <input type="text" ng-model="newstudent.rollNo"  placeholder="New Roll Number" />
+    <br />
+    <button ng-click='addnewStudent()'>Add New Student</button>
+    <a href="#/view2">view2</a>
+
+  </div>
