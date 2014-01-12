@@ -1,0 +1,24 @@
+<div>
+    Name:
+    <br />
+    <input type="text" ng-model="filter.name" placeholder="search text"/>
+    <br />
+    <table class="table">
+	    <thead>
+			<tr>
+			            <th>Roll Number</th>
+			            <th>Name</th>
+			            <th>Delete Action</th>
+			            <th>Update Action</th>
+			</tr>
+		</thead>
+	    <tbody>
+		<tr ng-repeat="student in students | filter:filter.name">
+		       <td>{{student.rollNo}}</td>
+		       <td>{{student.name}}</td>
+		       <td><button ng-click="deleteStudent($index)">Remove</button></td>
+		       <td><a href="#updateStudentView/{{$index}}">Update Student</a></td>
+		</tr>
+	</tbody>
+	</table> 
+</div>
