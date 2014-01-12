@@ -11,6 +11,18 @@ sampleApp.factory("studentfac",function(){
                 'name':"Swati",
                 'rollNo':2
             },
+			{
+                'name':"Ankitpart1",
+                'rollNo':3
+            },
+			{
+                'name':"Ankitpart3",
+                'rollNo':4
+            },
+			{
+                'name':"Ankitpart5",
+                'rollNo':5
+            },
         ];
         studentMaster.addStudent = function (name,rollNo) {
               studentMaster.studentList.push(

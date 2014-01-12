@@ -1,3 +1,37 @@
+
+
+<div class="col-lg-2">
+
+</div>
+<div class="col-lg-8 table-responsive">
+ 	<h3>List of Students</h3>
+    <label>Search
+    <input type="text" ng-model="filter.name" placeholder="search text" />
+    </label>
+	<table class="table table-bordered table-striped">
+	    <thead>
+			<tr>
+			            <th>Roll Number</th>
+			            <th>Name</th>
+			            <th>Update Action</th>
+                        <th>Delete Action</th>
+			</tr>
+		</thead>
+	    <tbody>
+		<tr ng-repeat="student in students | filter:filter.name">
+		       <td>{{student.rollNo}}</td>
+		       <td>{{student.name}}</td>
+		       <td><a href="#updateStudentView/{{$index}}">Update Student</a></td>
+               <td><button ng-click="deleteStudent($index)" class="btn btn-default">Remove</button></td>
+		</tr>
+	</tbody>
+	</table> 
+</div>
+<div class="col-lg-2">
+
+</div>
+
+<!-- 
 <div>
     Name:
     <br />
@@ -22,3 +56,4 @@
 	</tbody>
 	</table> 
 </div>
+-->
