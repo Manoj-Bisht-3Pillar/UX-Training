@@ -1,28 +1,115 @@
-<h2>User Info</h2>
+<!-- view detail -->
+<div ng-show="mode.view">
+	<h2>User Info</h2>
 
-<div class="content user-form">
-	<div class="header-control">
-		<input type="search" ng-model="search" ng-change="change()" placeholder="Search" class="textbox" />
-	</div>
+	<div class="content user-form">
+		<div class="header-control">
+			<div class="col-1">
+				<input type="search" ng-model="search" ng-change="change()" placeholder="Search" class="textbox" />
+			</div>
+			<div class="col-2">
+				<button ng-click="add()">Add User</button>
+			</div>
+			<div class="clr"></div>
+		</div>
 
-	<table>
-		<tr>
-			<th width="20%">First Name</th>
-			<th width="20%">Last Name</th>
-			<th width="40%">Email</th>
-			<th width="20%">&nbsp;</th>
-		</tr>
-		<tr ng-repeat="user in users | filter:search">
-			<td>{{user.fname}}</td>
-			<td>{{user.lname}}</td>
-			<td>{{user.email}}</td>
-			<td>
-				<button ng-click="delete(user)">Delete</button>
-			</td>
-		</tr>
-	</table>
+		<table>
+			<tr>
+				<th width="15%">First Name</th>
+				<th width="15%">Last Name</th>
+				<th width="35%">Email</th>
+				<th width="15%">Address</th>
+				<th width="20%">&nbsp;</th>
+			</tr>
+			<tr ng-repeat="user in users | filter:search">
+				<td>{{user.fname}}</td>
+				<td>{{user.lname}}</td>
+				<td>{{user.email}}</td>
+				<td>{{user.address}}</td>
+				<td>
+					<button ng-click="edit(user)">Edit</button>
+					<button ng-click="delete(user)">Delete</button>
+				</td>
+			</tr>
+		</table>
 
-	<div ng-if="!users.length" class="no-record">
-		No Records
+		<div ng-if="!users.length" class="no-record">
+			No Records
+		</div>
 	</div>
 </div>
+<!-- /view detail -->
+
+<!-- edit detail -->
+<div ng-show="mode.edit">
+	<h2>Edit User Info</h2>
+
+	<div class="content">
+		<form name="editForm" class="user-form">
+			<table class="add-edit">
+				<tr>
+					<td>First Name</td>
+					<td><input type="text" class="textbox" ng-model="editUser.fname" required /></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="text" class="textbox" ng-model="editUser.lname" required /></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="email" class="textbox" ng-model="editUser.email" required /></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><input type="text" class="textbox" ng-model="editUser.address" required /></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<button ng-disabled="editForm.$invalid" ng-click="saveEdited(editUser)">Save</button>
+						<button ng-click="cancel()">Cancel</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</div>
+<!-- /edit detail -->
+
+<!-- add detail -->
+<div ng-show="mode.add">
+	<h2>Add User Info</h2>
+
+	<div class="content">
+		<form name="addForm" class="user-form">
+			<table class="add-edit">
+				<tr>
+					<td>First Name</td>
+					<td><input type="text" class="textbox" ng-model="newUser.fname" required /></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="text" class="textbox" ng-model="newUser.lname" required /></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="email" class="textbox" ng-model="newUser.email" required /></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><input type="text" class="textbox" ng-model="newUser.address" required /></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<button ng-disabled="addForm.$invalid" ng-click="saveAdded(newUser)">Save</button>
+						<button ng-click="cancel()">Cancel</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</div>
+<!-- add detail -->
