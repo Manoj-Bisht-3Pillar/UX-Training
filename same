@@ -1,0 +1,965 @@
+[33mcommit 2c54e3cbaa9e5f1a854d4241e0614a59b14b5353[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Mon Jan 13 05:38:01 2014 -0500
+
+    updated readme.txt file
+
+[33mcommit 33af91f8f802ed4962eb6104eaad4a3884ca0a33[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Mon Jan 13 05:35:42 2014 -0500
+
+    updated files
+
+[33mcommit 2ddddbffa76f87477e2b28611083143f4f54c1bb[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Mon Jan 13 14:43:23 2014 +0530
+
+    commmitting 10th jan assignment
+
+[33mcommit 4e33c92a49d955f372f49775d6a8426f34afc6c3[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Mon Jan 13 04:06:09 2014 -0500
+
+    updated files
+
+[33mcommit 56073ff0ecff2f9d7bba610f720dcabf2283dcc2[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Mon Jan 13 02:35:02 2014 -0500
+
+    added files
+
+[33mcommit 2dd0a6fb56c3e4865794742d3400fc08126f4ed4[m
+Author: unknown <ankit.rustagi@NDI-LAP-155.3pillar.corp>
+Date:   Mon Jan 13 12:58:21 2014 +0530
+
+    Updated code
+
+[33mcommit b7d3ca8e87376f2758cd420b97d83c43ac264e9a[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Mon Jan 13 01:00:47 2014 +0530
+
+    commiting
+
+[33mcommit d065c888d4263905b4d8c7d1b7b521323accafce[m
+Author: ankit rustagi <ankit.rustagi@3pillarglobal.com>
+Date:   Sun Jan 12 07:48:30 2014 -0800
+
+    New application
+
+[33mcommit 9ad88cd58e07b71192af5d72a386660d654f61b5[m
+Author: ankit rustagi <ankit.rustagi@3pillarglobal.com>
+Date:   Sun Jan 12 04:21:32 2014 -0800
+
+    updated new app
+
+[33mcommit a5431ec16d7d65ce2a3016c6c87dc548c05ebeaf[m
+Merge: ec29c26 319d929
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Fri Jan 10 23:32:52 2014 +0530
+
+    manual merge
+
+[33mcommit 319d9298a6fa25c9a013a03a2da8d1642963673c[m
+Merge: ae2eef1 1d06110
+Author: unknown <Ashish.Sharma@NDI-LAP-354.3pillar.corp>
+Date:   Fri Jan 10 14:50:42 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 1d0611090eb505c60c5453cdf54985a84fe5ff15[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Fri Jan 10 14:47:19 2014 +0530
+
+    committing for update
+
+[33mcommit 4dfe3f3f3a97d88140093158e4e5eba5387d4a02[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Fri Jan 10 14:35:52 2014 +0530
+
+    Updating variable name
+
+[33mcommit 0cd2339b0ab522bba45aaf4e91d60106def8c0d8[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Fri Jan 10 03:42:56 2014 -0500
+
+    Added components
+
+[33mcommit d31f17780cccd08c13e684a2f9166d674c8900fb[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Fri Jan 10 02:34:36 2014 -0500
+
+    updated css
+
+[33mcommit 7448925d5695324403c526f007d4ebdceea48899[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Fri Jan 10 12:44:23 2014 +0530
+
+    Updated calculator app using controller
+
+[33mcommit 8a3224c900124f62e340e3e7a544f296a1341604[m
+Merge: e6dc01b 3fe8866
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Fri Jan 10 02:05:55 2014 -0500
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit e6dc01ba73ae77ef1e1d3564be571f21a1ec39ce[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Fri Jan 10 02:04:49 2014 -0500
+
+    Added calulator app
+
+[33mcommit 3fe88664e39f4c4df3f26d09d7a949e94d5fa0f3[m
+Merge: 8ddeb67 d6503b8
+Author: ashish tripathi <ashish.tripathi@3pillarglobal.com>
+Date:   Fri Jan 10 12:01:06 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 8ddeb67ed1144fbb48f7e11f86bff20a43ad3a47[m
+Author: ashish tripathi <ashish.tripathi@3pillarglobal.com>
+Date:   Fri Jan 10 12:00:44 2014 +0530
+
+    commiting calculator
+
+[33mcommit d6503b865aaf1f866c133f136c97bc84ef576b94[m
+Merge: fedf2b7 6db098c
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Fri Jan 10 11:58:01 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit fedf2b75ef909331641f05a47b92f9aa54a563ac[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Fri Jan 10 11:57:30 2014 +0530
+
+    updating calculator app version 1
+
+[33mcommit 6db098c9d9b83b9db7b94f154af51e5c024ad323[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Fri Jan 10 11:56:56 2014 +0530
+
+    Updated files
+
+[33mcommit 19d396021caabaee8bb246f3028f9f69692dfcd5[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Fri Jan 10 11:37:24 2014 +0530
+
+    Updated New Practice
+
+[33mcommit db56abe3c4c4f4e9b57269f6b06b49b067e813b5[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Fri Jan 10 11:26:57 2014 +0530
+
+    commiting 9thdayexercise
+
+[33mcommit 55f742555e5ae0d9fb9fac12076c8c197952a83e[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Fri Jan 10 11:26:04 2014 +0530
+
+    12thdaycommit
+
+[33mcommit ec29c264ec06acb39f644fc00b625d111c1a83a5[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Fri Jan 10 01:04:15 2014 +0530
+
+    Adding angular calculator app
+
+[33mcommit 34b60a50c0dd678a989b4cc41e938a7a5b4cc60b[m
+Merge: 832de65 1e8978f
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Fri Jan 10 00:50:47 2014 +0530
+
+    manual merge
+
+[33mcommit 832de65adba1857f47cabead2f8736b7f07fdff8[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Fri Jan 10 00:47:37 2014 +0530
+
+    Updating transition to widget file
+
+[33mcommit 1e8978fbc3d81878f10765709cf71809995a8b9d[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Jan 9 23:54:23 2014 +0530
+
+    angular 2nd session calculator
+
+[33mcommit 528c1f1f8b27b8642e07b706b4f37bf20da5ed63[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Thu Jan 9 21:52:30 2014 +0530
+
+    Modified unusable aeroplane image
+
+[33mcommit df013afeb252291f23f5cf8426f5d7556129e39a[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Thu Jan 9 20:36:26 2014 +0530
+
+    Calculator in AngularJS
+
+[33mcommit 41d49b1ec636b033a4bf2565056354cd74c7d9c2[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Thu Jan 9 10:00:56 2014 -0500
+
+    updated files
+
+[33mcommit 9a99704700451745d910d9c4aa9ba11830526eb5[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Thu Jan 9 20:02:13 2014 +0530
+
+    Aeroplane animation, button and web components
+
+[33mcommit 97e93f389e8d9a5c6c8b33bb2dc5f354a3b746f6[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Thu Jan 9 20:00:26 2014 +0530
+
+    Updated bit of changes in the code and aeroplane image
+
+[33mcommit ae2eef11e3d65d2a870554a415168c3a26f05ae3[m
+Author: unknown <Ashish.Sharma@NDI-LAP-354.3pillar.corp>
+Date:   Thu Jan 9 14:57:17 2014 +0530
+
+    Updated
+
+[33mcommit 122ee79b751860e5a4e9d4cb1d5669a7cc5c8c4e[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Thu Jan 9 04:27:10 2014 -0500
+
+    Added CSS3 files
+
+[33mcommit e62f668c1a0bdb8e9039376aa6144422ea2e4cb6[m
+Merge: 348c38c a4d5d93
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Thu Jan 9 04:25:41 2014 -0500
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit a4d5d935db51f5803708311f0acb1001c245c0fa[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Thu Jan 9 14:46:20 2014 +0530
+
+    minor changes to CSS
+
+[33mcommit 7334b6bf9a07f679b477b21e2caf1ce071dc055d[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Thu Jan 9 13:53:30 2014 +0530
+
+    Updated
+
+[33mcommit 9739e00fdbb3f99a2eafec9c99a61ec3008d50d5[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Thu Jan 9 13:43:33 2014 +0530
+
+    Adding button box shadow effect
+
+[33mcommit 9c02cab47f9fcd1044ecca0abfed198ca9774b5b[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Thu Jan 9 13:37:23 2014 +0530
+
+    commit for update
+
+[33mcommit 3892961ef35f1cb28c6cbc1bd8c395595f05ef35[m
+Author: ashish tripathi <ashish.tripathi@3pillarglobal.com>
+Date:   Thu Jan 9 13:13:27 2014 +0530
+
+    commiting pagination component
+
+[33mcommit a4cabbbac3dce03c49fac92fc91051a9b0d1d069[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Thu Jan 9 12:56:41 2014 +0530
+
+    Updated Assignments
+
+[33mcommit 72904eada9335030ffa8edf9e18d204014107329[m
+Merge: fb3b102 82d41c1
+Author: ashish tripathi <ashish.tripathi@3pillarglobal.com>
+Date:   Thu Jan 9 12:53:09 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit fb3b102cd8cb8c6268c56ccddc278c1b0057bc50[m
+Author: ashish tripathi <ashish.tripathi@3pillarglobal.com>
+Date:   Thu Jan 9 12:52:28 2014 +0530
+
+    commiting css3 assignment
+
+[33mcommit 82d41c1b706cb896eaa0722d9710cd50da1885c7[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Thu Jan 9 12:42:20 2014 +0530
+
+    Adding transitions
+
+[33mcommit 348c38c1de1ec715c1c60cb8b213b6089b4bd4e2[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Thu Jan 9 02:08:56 2014 -0500
+
+    Updated Folder Name
+
+[33mcommit 21ea98960010c22c322d4d9748f418fa9a0f69b1[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Jan 9 11:08:52 2014 +0530
+
+    CSS3 exercise
+
+[33mcommit 199359ed5d46215f3cbacc975ce9631cc8afd3cb[m
+Merge: 3c28882 5fefb56
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Jan 9 11:07:11 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 5fefb56011a0e87296289dda21223604b993fab7[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Thu Jan 9 02:17:41 2014 +0530
+
+    Interim Changes; component ver. 1
+
+[33mcommit 0e7e62a4a024ae748fc5a4f46348799bd8d69e3d[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Tue Jan 7 12:29:46 2014 -0500
+
+    Added files
+
+[33mcommit f5ba114719700bed33d429a752e61837b4402f5b[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Tue Jan 7 17:09:45 2014 +0530
+
+    Adding angular application
+
+[33mcommit 3c288823a7389e1cb3373eebebad0109e6cbe192[m
+Merge: c008cea 6a61155
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Tue Jan 7 15:21:19 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 6a611551c226f5cfadb1235be63eb2ad164d0974[m
+Merge: b0f3191 6d2f6d8
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Tue Jan 7 14:38:03 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit b0f3191a04d99100a9d63b2f109a11340701ed60[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Tue Jan 7 14:37:13 2014 +0530
+
+    Updated by deleting .git file
+
+[33mcommit 6d2f6d840260b626e4448809424939f8d3532507[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Tue Jan 7 14:37:10 2014 +0530
+
+    committing for assignment
+
+[33mcommit f65a6c267e443afc4cee3e074a25dd82b24aa759[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Tue Jan 7 14:31:50 2014 +0530
+
+    Upadted the files for angular session 1
+
+[33mcommit 9148d63aec6f82363bd1b89292f893251c952406[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Tue Jan 7 14:18:49 2014 +0530
+
+    Updated html5 example for canvas
+
+[33mcommit 04d36f994b05645abedd4adc76037b607a3defe1[m
+Merge: afc8849 ef81e1b
+Author: ashish tripathi <ashish.tripathi@3pillarglobal.com>
+Date:   Tue Jan 7 12:24:02 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit afc8849db365824026ca03c6b2820867c1a890b0[m
+Author: ashish tripathi <ashish.tripathi@3pillarglobal.com>
+Date:   Tue Jan 7 12:19:25 2014 +0530
+
+    commiting angularjs assignment
+
+[33mcommit ef81e1bed6f2d945460a23e2ea1b9e3d6f83358a[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Tue Jan 7 11:50:38 2014 +0530
+
+    Added angular code
+
+[33mcommit c008cea22103b6c8da8529199c1e451e61ef601f[m
+Merge: cc6a0ad 3de9c9d
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Tue Jan 7 11:45:06 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit cc6a0ad460bd44ba9204ef7034c9a3850988f932[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Tue Jan 7 11:44:23 2014 +0530
+
+    9thday exercise angular
+
+[33mcommit 3de9c9d741a9af6ec8d37858bb2478c17efff4e1[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Tue Jan 7 11:22:08 2014 +0530
+
+    Angular code
+
+[33mcommit acc1a96562576bb3ed0c870330cf4222a603b7ca[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Mon Jan 6 11:56:08 2014 -0500
+
+    Updated folder name
+
+[33mcommit 897a1a8ef89ec99d4880d243930bdc9774012b1f[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Mon Jan 6 11:53:15 2014 -0500
+
+    Updated git file instruction
+
+[33mcommit c6cefbabe32b8f47e9409472aa2f487a2c046d66[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Mon Jan 6 11:47:58 2014 -0500
+
+    Added angularjs assignment
+
+[33mcommit 72a81bbae9add468c842ddc62581ce6860d9b07b[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Mon Jan 6 11:46:17 2014 -0500
+
+    updated folder
+
+[33mcommit 21111efcbd0411c1aec2fdcc784431641de03551[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Mon Jan 6 11:39:42 2014 -0500
+
+    updated folder
+
+[33mcommit 98fd9b8e8964b47010953d16c778f9992c754955[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Mon Jan 6 11:35:32 2014 -0500
+
+    Updated folder
+
+[33mcommit b2676ed7387a1c81cd0697cdacbd49cc84c7b5af[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Mon Jan 6 11:25:02 2014 -0500
+
+    Added AngularJS Assignment
+
+[33mcommit 6cf70a1e97310e08f31aa54b50309f8912780efc[m
+Author: unknown <Ashish.Sharma@NDI-LAP-354.3pillar.corp>
+Date:   Mon Jan 6 18:33:19 2014 +0530
+
+    updated files
+
+[33mcommit c43b0b08ea75cf39a2ae86df33d87072c2106f33[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Mon Jan 6 17:15:53 2014 +0530
+
+    committing new code
+
+[33mcommit d1b5465c4b74dff257a0f5b26c6163506cdb7ef3[m
+Merge: 58d079f 77d845d
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Mon Jan 6 17:03:11 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 58d079f06f0d198ba3ac460e3cf4ea2daa2bba79[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Mon Jan 6 16:52:49 2014 +0530
+
+    committing for update
+
+[33mcommit 77d845d50bcf63286084d8005fdbae21194f347c[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Mon Jan 6 16:38:17 2014 +0530
+
+    Updated Aditya file
+
+[33mcommit bd2fd7ebeabb8fbc2de2d73bfe38a4e407cd0a82[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Mon Jan 6 14:38:06 2014 +0530
+
+    deleted few of the files
+
+[33mcommit 23f1653a64d1317d51e89b6ed7b582d9a225b892[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Mon Jan 6 14:26:41 2014 +0530
+
+    committing without video
+
+[33mcommit 4b7175735c1cb4a6043a0b6e65079ca10e4c63d6[m
+Merge: 552a046 6a2c0e8
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Mon Jan 6 14:26:01 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 6a2c0e81bfa09457b55e0fc8409f60545325b65c[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Mon Jan 6 14:16:44 2014 +0530
+
+    Added new files to seesion 1 : aditya
+
+[33mcommit 552a0464b276cea3d669b6866fac83443cb652f5[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Mon Jan 6 14:13:04 2014 +0530
+
+    updated
+
+[33mcommit baf2b3d29d13ac6df9dc908b02a66ea1fb3ac171[m
+Merge: 99112ad 5060e12
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Mon Jan 6 14:03:42 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 99112adb3d9e3097046b91991e73e9518631581b[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Mon Jan 6 13:27:00 2014 +0530
+
+    committing for update
+
+[33mcommit 5060e12a93b031f7d6a093584da611d4f5b0b039[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Mon Jan 6 13:20:50 2014 +0530
+
+    HTML5 exercise day 8
+
+[33mcommit a050d23626c69dd5f54d3f075d06efa23833c92e[m
+Merge: 0fdc179 2049bfa
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Mon Jan 6 12:39:44 2014 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 0fdc17951464a9f390ddc9dad0821aae5cacdc44[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Mon Jan 6 12:39:05 2014 +0530
+
+    Updating changes
+
+[33mcommit 2049bfaeff2ba322f4c62d40d5afdee60adaec5a[m
+Author: “manoj.bisht” <“manoj.bisht@3pillarglobal.com”>
+Date:   Mon Jan 6 12:22:43 2014 +0530
+
+    files for HTMl5
+
+[33mcommit dd51bc449c08fa54ab6487b633c7089af026f5bf[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Jan 2 13:05:06 2014 +0530
+
+    updated 3varscope-withvar
+
+[33mcommit 8586cf5fa9955ed087488bde59e43db3997f9e4b[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Jan 2 00:46:16 2014 +0530
+
+    Logger updated
+
+[33mcommit a9a27aed821b81751e9172a36e6a288963515b4b[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Jan 2 00:16:01 2014 +0530
+
+    globalvar example
+
+[33mcommit c0684afe3d4393c928b08eb3ec1c0e42ad5e046d[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Tue Dec 31 16:36:22 2013 +0530
+
+    Commiting again
+
+[33mcommit a676b50700efd975cd3a332a009e07fac37d33cf[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Tue Dec 31 16:32:20 2013 +0530
+
+    Commiting var scope files
+
+[33mcommit ec31886d634b316ae91fa19ca7a7e94aa5201e36[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Mon Dec 30 13:10:16 2013 +0530
+
+    committing for new assignmnet
+
+[33mcommit 29c3caaa20ff8a67f043c9648d61ac0364346e0e[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Mon Dec 30 12:55:51 2013 +0530
+
+    Added Example explaining Public and Private members
+
+[33mcommit 7a4541b59cdfa8c0e134c91033ca0b313e317e43[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Mon Dec 30 12:29:48 2013 +0530
+
+    Logger function
+
+[33mcommit ccff7463fe5d4c6b632f7ce5a9a7ce456af79afd[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Mon Dec 30 11:25:30 2013 +0530
+
+    Created two scripts
+
+[33mcommit ad8175db06b59c4ae1ba59fa2f8ef55c3123009d[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Mon Dec 30 00:55:20 2013 +0530
+
+    day four some exercise
+
+[33mcommit 74d4d18a5e7758e2fb9a4597e201b10991cb0b08[m
+Merge: 4061ed5 03dd4f7
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Fri Dec 27 18:10:03 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 4061ed588c50cb69b415532e1f143289a13d8fdd[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Fri Dec 27 18:09:26 2013 +0530
+
+    Date label added
+
+[33mcommit 03dd4f7ecc5024ed87ea0f4a5aa0e9b75552fa55[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Fri Dec 27 14:53:54 2013 +0530
+
+    Updating day4 assignment
+
+[33mcommit 4c060e44f4ecf4144613375211afc9936fdd6eed[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Fri Dec 27 14:43:54 2013 +0530
+
+    commited new files
+
+[33mcommit c9d68f1581e3a8e1cc24e42e13f9b33e89fbbe98[m
+Author: unknown <ashish.sharma@NDI-LAP-354.3pillar.corp>
+Date:   Fri Dec 27 14:40:35 2013 +0530
+
+    Commiting files
+
+[33mcommit 61c72a4a1c423f55dd1fbd45fa7fe86a5e91af4f[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Fri Dec 27 13:31:35 2013 +0530
+
+    Updated session 3
+
+[33mcommit 3b2b871a4769a04bb770f08995734faad8d82844[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Fri Dec 27 13:13:19 2013 +0530
+
+    committing for update
+
+[33mcommit 22e2dd10de558f992b4ac59cb1dba9ce92cce4b9[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Fri Dec 27 12:49:18 2013 +0530
+
+    Updated files
+
+[33mcommit 4d173f45ade5eff2fa9eee039a0fb183707b2517[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Fri Dec 27 12:45:37 2013 +0530
+
+    Updating prototype inheritance
+
+[33mcommit 813a960e5b81d159ce53c612a15156129e12b93f[m
+Author: “manoj.bisht” <“manoj.bisht@3pillarglobal.com”>
+Date:   Thu Dec 26 16:30:18 2013 +0530
+
+    files added for JS concepts.
+
+[33mcommit 59eab4823d365c34185980d56ed9d8c95737854c[m
+Merge: 90e2bf9 6595db7
+Author: unknown <ashish.sharma@NDI-LAP-354.3pillar.corp>
+Date:   Thu Dec 26 14:55:31 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 6595db7af7ee5cde890884ded18146ad30041119[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Thu Dec 26 14:51:52 2013 +0530
+
+    Deleting unwanted file
+
+[33mcommit 7c93049d418a45f3901dfce2725a356eca95b1d1[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Thu Dec 26 14:50:58 2013 +0530
+
+    Updating day 3 work
+
+[33mcommit 90e2bf918c6ffc57293a3b72d369468d0fbb261e[m
+Author: unknown <ashish.sharma@NDI-LAP-354.3pillar.corp>
+Date:   Thu Dec 26 14:50:54 2013 +0530
+
+    third day assignment
+
+[33mcommit 14dfec99bcd6b3adb9692d250955407ebd503e52[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Dec 26 14:09:08 2013 +0530
+
+    .
+
+[33mcommit 37c8a2a714031941889347b1eba6ffc1ad5d54c8[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Thu Dec 26 13:50:55 2013 +0530
+
+    committing for update
+
+[33mcommit daf40082a9d51020748c992aca1511ed9978795b[m
+Merge: 5503a0b c230003
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Dec 26 13:18:10 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 5503a0b327c9610839f26958fc18f92ecc2ba54e[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Dec 26 13:17:43 2013 +0530
+
+    .
+
+[33mcommit c2300033ef8f2fe3e0291ff493c2c9f94b29bfb5[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Thu Dec 26 13:17:25 2013 +0530
+
+    Deleted 1 file
+
+[33mcommit d1386b42b8bfadcf1548ea4f8b196d7a0be51838[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Thu Dec 26 13:16:04 2013 +0530
+
+    Addeded assignment 2
+
+[33mcommit bfe7f1e77443a837a44e36f34c7923e37d0d707c[m
+Merge: 5bb6afb 1096af3
+Author: ashish tripathi <ashish.tripathi@3pillarglobal.com>
+Date:   Thu Dec 26 10:53:43 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 5bb6afbc33d7047c3b47f7a46cae8af64ed609ae[m
+Author: ashish tripathi <ashish.tripathi@3pillarglobal.com>
+Date:   Thu Dec 26 10:52:40 2013 +0530
+
+    commiting assignment2 oops concept
+
+[33mcommit 1096af35e111d9f422610f4d74e013876c20f17d[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Dec 26 01:38:02 2013 +0530
+
+    .
+
+[33mcommit 9e13d2ed9b19c4e576d4f45834e909682e0cb568[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Thu Dec 26 01:14:39 2013 +0530
+
+    .
+
+[33mcommit 06e36cf62ab1a831692b16cc540b85d9af3d5d22[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Wed Dec 25 19:58:38 2013 +0530
+
+    Updated new inheritance file
+
+[33mcommit c7971fa2b4316dfeef578b71d15e3d0320322206[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Wed Dec 25 19:24:26 2013 +0530
+
+    Updated inheritance and private/public/function
+
+[33mcommit 47f700715193883a82c2450e98fa0b55c009fa12[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Wed Dec 25 18:26:45 2013 +0530
+
+    Updated Closure files
+
+[33mcommit 1fd340ff74bef7b6063329322a7823d7c8a5a8c0[m
+Merge: 6a1a8b2 1855e16
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Tue Dec 24 04:13:14 2013 -0500
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 6a1a8b232d127b922f91eaf155cdeddd0291b05f[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Tue Dec 24 04:11:48 2013 -0500
+
+    Updated syntax
+
+[33mcommit 1855e163b478fee3b126375ce1dd21930e7a2b5c[m
+Author: ashishdesign <ashish.sharma@3pillar.com>
+Date:   Tue Dec 24 12:54:48 2013 +0530
+
+    Delete post-method-result.html
+
+[33mcommit 8e27212f954bb42c560ff2fb91d7c839fae15eb5[m
+Author: unknown <ashish.sharma@NDI-LAP-354.3pillar.corp>
+Date:   Tue Dec 24 12:34:36 2013 +0530
+
+    my first assignment
+
+[33mcommit 9dd7239d99bac731fc0bcf64f8fd21606d777eb5[m
+Author: Raj Bharti <raj.bharti@3pillarglobal.com>
+Date:   Tue Dec 24 01:41:24 2013 -0500
+
+    Added my assignments
+
+[33mcommit b82a6e76fe74172c0d319f799fda1df1de4a8bbe[m
+Merge: 57f2b25 4d9a1dc
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Tue Dec 24 11:12:09 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 57f2b25efec4bde90b97f7919b926999edefb536[m
+Author: Neeraj Joshi <neeraj.joshi@3pillarglobal.com>
+Date:   Tue Dec 24 11:11:29 2013 +0530
+
+    Adding day1 Assignments
+
+[33mcommit 4d9a1dc6d4438d150fbd795065a2e04a558759dd[m
+Merge: 8c328c0 51df009
+Author: “manoj.bisht” <“manoj.bisht@3pillarglobal.com”>
+Date:   Tue Dec 24 11:10:06 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 8c328c020fa1a75c15e700b9bd8cf5ab3585974d[m
+Author: “manoj.bisht” <“manoj.bisht@3pillarglobal.com”>
+Date:   Tue Dec 24 11:09:43 2013 +0530
+
+    files added
+
+[33mcommit 51df009dd99bef61e3356bf55f9bf6b5c6938944[m
+Merge: 20b46e3 7db101f
+Author: rinku <rinku.kashyap@3pillarglobal.com>
+Date:   Tue Dec 24 11:03:50 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 7db101fe26da78c5a735c9171da76b206671fa72[m
+Author: jainvaibhav <vaibhav.jain@3pillargobal.com>
+Date:   Tue Dec 24 11:01:49 2013 +0530
+
+    committing my code
+
+[33mcommit 20b46e3c8d2b9c0e6acffee8e35ed1aef2dc7966[m
+Author: rinku <rinku.kashyap@3pillarglobal.com>
+Date:   Tue Dec 24 11:01:01 2013 +0530
+
+    files added
+
+[33mcommit 37c6bd301bafcc825abed3b6a96445ddd7a72c01[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Tue Dec 24 10:57:22 2013 +0530
+
+    Added new file for css
+
+[33mcommit 4744f440582406786d28049fefc72236a047ed59[m
+Merge: df30551 b73114b
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Tue Dec 24 10:55:59 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit b73114bfec2f05bab117ceb80f251034de76d81f[m
+Author: ashish tripathi <ashish.tripathi@3pillarglobal.com>
+Date:   Tue Dec 24 10:54:17 2013 +0530
+
+    Added files
+
+[33mcommit df305512cbfe9cea235c65fd53ee3925c6ce2d6b[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Tue Dec 24 10:50:45 2013 +0530
+
+    comitting update for assignments session1
+
+[33mcommit b37eb9397ba5cf06a284ac50ae64abf5235af3af[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Tue Dec 24 10:44:54 2013 +0530
+
+    Adding files
+
+[33mcommit c4b6659bdef253b0665409136fc00e18fbd778f3[m
+Author: ankit rustagi <ankit.rustagi@3pillar.com>
+Date:   Tue Dec 24 10:42:17 2013 +0530
+
+    Added folder
+
+[33mcommit ce74f1662ef381e162a4595b86bbc8dc1a35a781[m
+Merge: 3917c7b a684ae3
+Author: unknown <Kailash.shastri@NDI-LAP-200.3pillar.corp>
+Date:   Tue Dec 24 09:09:27 2013 +0530
+
+    Merge branch 'master' of github.com:Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit 3917c7b58679ef10f509bc9f80374195022aebc4[m
+Author: unknown <Kailash.shastri@NDI-LAP-200.3pillar.corp>
+Date:   Tue Dec 24 09:05:12 2013 +0530
+
+    added kailash folder
+
+[33mcommit a684ae3d6b395ab2f6778c42e2fd14b5b7fc9591[m
+Author: rimbakasimba <nitinsingh81@gmail.com>
+Date:   Mon Dec 23 22:06:41 2013 +0530
+
+    1st version of training ppt
+
+[33mcommit 4a97a37be53d90062b4a6cec7381957b2d0d85c5[m
+Merge: a55b631 f30950e
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Mon Dec 23 20:44:41 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training
+
+[33mcommit a55b631067f2f8fa33e51a184d2f5ff932d6ebe0[m
+Author: harsh.lamba <harsh.lamba@3pillarglobal.com>
+Date:   Mon Dec 23 20:43:19 2013 +0530
+
+    @nd commit
+
+[33mcommit f30950e76dc1617c7a80a4c188a0d0d744ca277e[m
+Author: unknown <Kailash.shastri@NDI-LAP-200.3pillar.corp>
+Date:   Mon Dec 23 20:28:54 2013 +0530
+
+    changed
+
+[33mcommit 3a2eae92ec70821f3e323e475490749005516c3a[m
+Merge: 4e075e6 1d0e0fa
+Author: Manoj.Bisht <Manoj.Bisht@3pillarglobal.com>
+Date:   Mon Dec 23 20:00:33 2013 +0530
+
+    branch 1 checked in
+
+[33mcommit 4e075e698cc77a41e951d97418d320d921d45cd4[m
+Merge: 8b43848 008df16
+Author: Manoj.Bisht <Manoj.Bisht@3pillarglobal.com>
+Date:   Mon Dec 23 19:51:20 2013 +0530
+
+    Merge branch 'master' of https://github.com/Manoj-Bisht-3Pillar/UX-Training into branch2
+
+[33mcommit 1d0e0fa2a7f0bd1bcebb63cb6e9098dc36561612[m
+Author: Manoj.Bisht <Manoj.Bisht@3pillarglobal.com>
+Date:   Mon Dec 23 19:43:28 2013 +0530
+
+    branch 1 code pushed
+
+[33mcommit 8b438489b17835d91614a7c05c49e8c2bf675868[m
+Author: Manoj.Bisht <Manoj.Bisht@3pillarglobal.com>
+Date:   Mon Dec 23 19:32:07 2013 +0530
+
+    branch 2 code checked in
+
+[33mcommit 008df165234a8e479d18693d9ea46b03fbc7cb6f[m
+Author: Manoj.Bisht <Manoj.Bisht@3pillarglobal.com>
+Date:   Mon Dec 23 19:25:51 2013 +0530
+
+    commited the local changes
+
+[33mcommit 604fa3d6520adf4e288512af0bb544c05a777735[m
+Author: sumit.gupta <sumit.gupta@3pillarglobal.com>
+Date:   Mon Dec 23 18:44:20 2013 +0530
+
+    add a test file
+
+[33mcommit 79079bdd585bb445b8235466de3cb447283014d2[m
+Author: Lalit Sachdeva <sachdeva_libra@yahoo.com>
+Date:   Mon Dec 23 16:38:42 2013 +0530
+
+    verison file initialized

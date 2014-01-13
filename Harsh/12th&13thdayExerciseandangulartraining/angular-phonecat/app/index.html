@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" ng-app="demoApp">
+<head>
+  <meta charset="utf-8">
+  <title>My HTML File</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<label>Name</label>
+    <input type="text" ng-model="name"/> {{ name }}
+    <!-- <h3>
+    	NG-repeat and ng-init
+    </h3>
+    <div class="row">
+    	<div class="col-lg-12">
+        	<ul>
+            	<li ng-repeat="person in persons">
+                {{person}}
+                </li>
+            </ul>
+        </div>
+    </div>-->
+    <!-- <h3>
+    	NG-repeat and filter
+    </h3>
+    <div class="row" ng-init="customers=[{'name':'harsh','city':'delhi'},{'name':'ankit','city':'noida'},{'name':'rawat','city':'delhi'}]">
+    	<div class="col-lg-12">
+        	<ul>
+            	<li ng-repeat="cust in customers | filter:name | orderBy:'city'">
+                {{cust.name}} - {{cust.city}}
+                </li>
+            </ul>
+        </div>
+    </div> -->
+    <h3>
+    	Controllers-1st way
+    </h3>
+    <div class="row>
+    	<div class="col-lg-12" ng-controller="simplecontroller">
+        	<ul>
+            	<li ng-repeat="obj in objectDemo | filter:name | orderBy:'city'">
+                {{obj.name}} - {{obj.city}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
