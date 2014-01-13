@@ -25,7 +25,7 @@ app.config(function($routeProvider){
 });
 
 app.factory("userFactory", function($http){
-	var url = "user/data.json";
+	var url = "slim.php/user";
 
 	return{
 		getUser: function(){
@@ -35,10 +35,10 @@ app.factory("userFactory", function($http){
 			return $http.post(url, user);
 		},
 		deleteUser: function(user){
-			return $http.delete(url + user.id);
+			return $http.delete(url + "/" + user.id);
 		},
 		updateUser: function(user){
-			return $http.put(url + user.id, user);
+			return $http.put(url + "/" + user.id, user);
 		}
 	}
 });

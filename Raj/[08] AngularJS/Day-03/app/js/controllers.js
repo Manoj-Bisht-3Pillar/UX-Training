@@ -2,27 +2,28 @@
 
 var ctrl = angular.module("controllers", []);
 
-ctrl.controller("userInfoCtrl", function($scope, userFactory){
-
-	function init(){
-		$scope.search = app.searchedValue;
-
-		userFactory.getUser().success(function(data){
-			$scope.users = data;
-		});
+ctrl.controller("userInfoCtrl", function($scope, $location, userFactory){
+	var setup = {
+		showUser: function(){
+			userFactory.getUser().success(function(data){
+				$scope.users = data;
+			});
+		},
+		init: function(){
+			$scope.search = app.searchedValue;
+			this.showUser();
+		}
 	}
 
 	$scope.change = function(){
 		app.searchedValue = $scope.search;
 	}
 
-	$scope.edit = function(user){
-		userFactory.updateUser(user)
-	}
-
 	$scope.delete = function(user){
-		userFactory.deleteUser(user)
+		userFactory.deleteUser(user).success(function(){
+			setup.showUser();
+		});
 	}
 
-	init();
+	setup.init();
 });
