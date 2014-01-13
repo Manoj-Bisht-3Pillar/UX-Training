@@ -6,7 +6,8 @@
 <div class="col-lg-8 table-responsive">
  	<h3>List of Students</h3>
     <label>Search
-    <input type="text" ng-model="filter.name" placeholder="search text" />
+    <!--input type="text" ng-model="filter.name" placeholder="search text" /-->
+    <input type="text" ng-model="localSearchText" placeholder="search text" />
     </label>
 	<table class="table table-bordered table-striped">
 	    <thead>
@@ -18,7 +19,7 @@
 			</tr>
 		</thead>
 	    <tbody>
-		<tr ng-repeat="student in students | filter:filter.name">
+		<tr ng-repeat="student in students | filter:localSearchText">
 		       <td>{{student.rollNo}}</td>
 		       <td>{{student.name}}</td>
 		       <td><a href="#updateStudentView/{{$index}}">Update Student</a></td>

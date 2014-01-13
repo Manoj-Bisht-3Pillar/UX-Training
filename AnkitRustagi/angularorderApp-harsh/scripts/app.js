@@ -2,6 +2,7 @@ var sampleApp = angular.module('sampleApp', []);
 
 sampleApp.factory("studentfac",function(){
         studentMaster = {};
+        studentMaster.filterText = '';
         studentMaster.studentList = [
             {
                 'name':"Ankit",
@@ -61,6 +62,7 @@ sampleApp.config(['$routeProvider',
  
 sampleApp.controller('StudentViewCtrl', function ($scope,studentfac){
         $scope.students = studentfac.studentList;
+        $scope.localSearchText = studentfac.filterText;
         
         $scope.deleteStudent = function (index) 
               {studentfac.delStudent(index);};
@@ -68,8 +70,11 @@ sampleApp.controller('StudentViewCtrl', function ($scope,studentfac){
     });
 
 sampleApp.controller('addNewStudentCtrl', function ($scope,studentfac){
+        $scope.localSearchText = studentfac.filterText;
         $scope.addnewStudent = function()
-                {studentfac.addStudent($scope.newstudent.name,$scope.newstudent.rollNo);};
+                {studentfac.addStudent($scope.newstudent.name,$scope.newstudent.rollNo);
+                  window.location.href = "#studentListView";
+                };
 
     });
 
@@ -78,5 +83,6 @@ sampleApp.controller('updateStudentCtrl', function ($scope,studentfac,$routePara
         $scope.updateStudent = function(item)
         {
           studentfac.modifyStudent($scope.index,item.name,item.rollNo)
+          window.location.href = "#studentListView";
         }; 
     });
