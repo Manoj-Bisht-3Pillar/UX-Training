@@ -1,0 +1,29 @@
+<h2>User Info</h2>
+
+<div class="content user-form">
+	<div class="header-control">
+		<input type="search" ng-model="search" ng-change="change()" placeholder="Search" class="textbox" />
+	</div>
+
+	<table>
+		<tr>
+			<th width="20%">First Name</th>
+			<th width="20%">Last Name</th>
+			<th width="40%">Email</th>
+			<th width="20%">&nbsp;</th>
+		</tr>
+		<tr ng-repeat="user in users | filter:search">
+			<td>{{user.fname}}</td>
+			<td>{{user.lname}}</td>
+			<td>{{user.email}}</td>
+			<td>
+				<button ng-click="edit(user)">Edit</button>
+				<button ng-click="delete(user)">Delete</button>
+			</td>
+		</tr>
+	</table>
+
+	<div ng-if="!users.length" class="no-record">
+		No Records
+	</div>
+</div>

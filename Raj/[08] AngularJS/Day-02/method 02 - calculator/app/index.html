@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calculatorApp">
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+
+	<div id="wrapper" ng-controller="computeCtrl">
+		
+		<h1>Calculator</h1>
+
+		<div class="container">
+			
+			<form name="form">
+				<div class="control">
+					<input type="number" class="textbox" ng-model="cal.num1" required placeholder="Enter first number" />
+					<input type="number" class="textbox" ng-model="cal.num2" required placeholder="Enter second number" />
+				</div>
+
+				<div class="control">
+					<button type="button" ng-disabled="form.$invalid" ng-click="add()">+</button>
+					<button type="button" ng-disabled="form.$invalid" ng-click="sub()">-</button>
+					<button type="button" ng-disabled="form.$invalid" ng-click="multiply()">*</button>
+					<button type="button" ng-disabled="form.$invalid" ng-click="divide()">/</button>
+					<button type="button" ng-disabled="form.$invalid" ng-click="clear()">c</button>
+				</div>
+			</form>
+
+			<div class="clr"></div>
+
+			<div ng-if="cal.result || cal.result==0" class="result">
+				<span class="txt-black">Result</span> &nbsp; {{cal.result}}
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

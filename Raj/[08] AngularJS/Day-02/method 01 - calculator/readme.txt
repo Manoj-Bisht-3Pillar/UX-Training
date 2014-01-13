@@ -1,0 +1,1 @@
+This example is with ng-click with expressions
