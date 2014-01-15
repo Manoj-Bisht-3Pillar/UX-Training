@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" ng-app="demoApp">
+<head>
+  <meta charset="utf-8">
+  <title>My HTML File</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <!-- <script src="js/controllers.js"></script>  -->
+</head>
+<body>
+    <div class="container-fluid" >
+		<div class="row">
+        	<div class="col-lg-4">
+            </div>
+        	<div class="col-lg-4" ng-controller="defaultcontroller">
+            	<label>Name:</label>
+                <input type="text" ng-model="person.name" />{{person.name}}
+            	<div class="row">
+                	<div class="col-lg-12" ng-controller="firstcontroller"> 
+                    	<label>Name:</label>
+		                <input type="text" ng-model="person.name" />{{person.name}}
+                    	<div class="row">
+                        	<div class="col-lg-12"  ng-controller="secondcontroller">
+                         	<label>Name:</label>
+			                <input type="text" ng-model="person.name" />{{person.name}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+            </div>
+        </div>        
+    </div>
+    <script>
+		var demoApp	=	angular.module('demoApp',[]);
+		demoApp.controller('defaultcontroller', function($scope){
+			$scope.person	=	{'name':'Harsh'};
+		})
+		demoApp.controller('firstcontroller', function($scope){
+			$scope.person	=	{'name':'Harsh'};
+			
+		})
+		demoApp.controller('secondcontroller', function($scope){
+			$scope.person	=	{'name':'Harsh'};
+			
+		})
+	</script>
+</body>
+</html>

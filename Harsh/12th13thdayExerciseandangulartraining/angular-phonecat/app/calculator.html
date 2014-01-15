@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="calulatorApp">
+<head>
+  <meta charset="utf-8">
+  <title>My HTML File</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/calculator.js"></script>
+</head>
+<body ng-controller="calculation">
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span4">
+    	&nbsp;
+    </div>
+    <div class="span4">
+    	<h3>Provide Input</h3>
+		<input type="number" placeholder="Enter number" ng-model="data.first" />
+        <input type="number" placeholder="Enter number" ng-model="data.second" />
+    </div>
+    <div class="span4">
+    	&nbsp;
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span4">
+    	&nbsp;
+    </div>
+    <div class="span4">
+    	<input type="button" value="addition" ng-click="addition()"/>
+        <input type="button" value="Subtraction" ng-click="subtract()"/>
+        <input type="button" value="Multiplication" ng-click="multiplication()"/>
+        <input type="button" value="division" ng-click="division()"/>
+    </div>
+    <div class="span4">
+    	&nbsp;
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span4">
+    	&nbsp;
+    </div>
+    <div class="span4">
+    	<h3>Result:</h3>
+        {{data.result}}
+    </div>
+    <div class="span4">
+    	&nbsp;
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>
