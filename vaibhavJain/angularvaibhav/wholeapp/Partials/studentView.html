@@ -1,0 +1,49 @@
+
+
+<div class="col-lg-2">
+
+</div>
+<div class="col-lg-8 table-responsive">
+ 	<h3>List of Students</h3>
+    <label>Search
+    <!--input type="text" ng-model="filter.name" placeholder="search text" /-->
+    <input type="text" ng-model="localSearchText" placeholder="search text" />
+    </label>
+	<table class="table table-bordered table-striped">
+	    <thead>
+			<tr>
+			            <th>Roll Number</th>
+			            <th>Name</th>
+			            <th>Update Action</th>
+                        <th>Delete Action</th>
+			</tr>
+		</thead>
+	    <tbody>
+		<tr ng-repeat="student in students | filter:localSearchText | orderBy:orderProp">
+		       <td>{{student.rollNo}}</td>
+		       <td>{{student.name}}</td>
+		       <td><a href="#updateStudentView/{{$index}}">Update Student</a></td>
+               <td><button ng-click="deleteStudent($index)" class="btn btn-default">Remove</button></td>
+		</tr>
+	</tbody>
+	</table>
+	
+		<label>Sort by (name):</label>
+			<select ng-model="orderProp">
+			  <option value="name">ascending</option>
+			  <option value="-name">descending</option>
+			</select>
+		<label>Sort by (rollNo):</label>
+			<select ng-model="orderProp">
+			  <option value="rollNo">ascending</option>
+			  <option value="-rollNo">descending</option>
+			</select>
+		<label> enter text</label>
+		<input type="text" ng-model="text" placeholder="Enter text"/>
+		  <p>Input: {{ text }}</p>
+		  <p>Filtered input: {{ text | reverse }}</p>
+		  <p>Filtered input (capital and reverse): {{ text | uppercase | reverse}}</p>
+</div>
+<div class="col-lg-2">
+
+</div>

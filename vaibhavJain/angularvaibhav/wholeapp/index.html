@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/mainpage.css" rel="stylesheet"/>
+</head>
+<body ng-app="sampleApp">
+<div class="header">
+  <div class="navbar-header">
+    <h2>UX - Exercise</h2>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#studentListView"><span class="glyphicon glyphicon-list"></span>Student List</a></li>
+      <li><a href="#addNewStudent"><span class="glyphicon glyphicon-plus-sign"></span>Add New Student</a></li>
+    </ul>
+
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div ng-view>
+    	<!-- Everything goes here --> 
+    </div>
+  </div>
+</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	  <script src="controller-scripts/controllers.js"></script>
+  </head>
+  <body>
+    <div>
+      {{ 'World'| greet }}
+	  <!-- {{abc=0}}
+	  <p ng-hide="abc"><strong>I could be shown, or I could be hidden</strong></p>
+	  <p ng-show="abc"><i>I could be shown, or I could be hidden</i></p>-->
+    </div>
+
+	
+	
+	<div ng-controller="greetctrl">
+  {{ greeting }}
+</div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<html ng-app='sampleApp'>
+<head>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+  <script src="controller-scripts/controllers.js"></script>
+  
+  </head>
+<body> 
+	
+  <div ng-controller="sample1">
+	Search : <input type="text" ng-model="hname.name" placeholder='according to name'>
+    
+	<ul>
+    <li ng-repeat="i in result | filter:hname">
+      {{i.name}}
+      <p>{{i.snippet}}</p>
+    </li>
+  </ul>
+  Search : <input type="text" ng-model="city.snippet" placeholder='according to snippet'>
+  <ul>
+    <li ng-repeat="i in result | filter:city">
+      {{i.name}}
+      <p>{{i.snippet}}</p>
+    </li>
+  </ul>
+  
+  </div>
+  </div>
+</body>
+</html>
