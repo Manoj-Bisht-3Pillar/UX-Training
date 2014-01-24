@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="uppercaseApp">
+<head>
+  <meta charset="utf-8">
+  <title>My HTML File</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script>
+  angular.module('uppercaseApp', [])
+  .directive('myCapitalise', function() {
+    return {
+      restrict: 'E',
+      template: 'Capitalise Text: {{value|uppercase}}'
+    };
+  });
+  </script>
+</head>
+<body>
+	<div>
+  		<p><input type="text" ng-model="value" placeholder="Input your text"></p>
+  		<my-capitalise></my-capitalise>
+	</div>
+</body>
+</html>

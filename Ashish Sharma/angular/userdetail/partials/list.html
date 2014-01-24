@@ -1,0 +1,19 @@
+<div>Search:&nbsp;<input ng-model="query"></div><br>
+<table class="table table-striped"> 
+        	<tr>
+            	<th>Name</th>
+                <th>Designation</th>
+                <th><a ng-click="showme=false"><i class="icon-plus-sign"></i> </a></th>
+            </tr>
+            <tr ng-repeat="person in crew | filter:query | orderBy:orderProp">
+            	<td>{{person.name}}</td>
+                <td>{{person.designation}}</td>
+                <td><i class="icon-edit"></i><a href="" ng-click="del($index)">Delete</a></td>
+            </tr>
+           
+        </table>
+        <div ng-hide="showme">Name:<br>
+        <input ng-model="newPerson.name" placeholder="Your Name" required="" type="text"><br>
+        Description:<br>
+        <input ng-model="newPerson.designation" placeholder="Your Designation" required="" type="text"><br>
+        <input type="submit" ng-click="addPerson()" value="Add"></div>
