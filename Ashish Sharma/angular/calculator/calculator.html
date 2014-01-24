@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+    <style>
+    	ul, li {
+			display:inline-block;
+			list-style-type:none;
+			margin: 0;
+			padding:0;
+		}
+		button {
+			padding:5px 10px;
+		}
+    </style>
+  </head>
+  <body>
+    <div ng-controller="Calculator">
+      <label>Value 1:</label>
+      <input type="number" ng-model="value1" placeholder="Enter the first value"><br>
+      <label>Value 2:</label>
+      <input type="number" ng-model="value2" placeholder="Enter the second value">
+      <hr>
+      <ul>
+      	<li><button ng-click="add()">&nbsp;+&nbsp;</button></li>
+        <li><button ng-click="sub()">&nbsp;-&nbsp;</button></li>
+        <li><button ng-click="mult()">&nbsp;x&nbsp;</button></li>
+        <li><button ng-click="divide()">&nbsp;/&nbsp;</button></li>
+       </ul>	
+      <h3 ng-if="result">Result: {{result}}</h3>
+    </div>
+  </body>
+</html>
